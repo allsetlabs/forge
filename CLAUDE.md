@@ -1,119 +1,78 @@
 # Component Library (@allsetlabs/reusable)
 
-Shared, reusable component library used across all frontend modules. Built with React, TypeScript, Tailwind CSS, and shadcn/ui patterns. This is a library package — not a standalone application. No build step required; consumers import directly from source.
+## Goal
 
-## Code Structure
+Shared React component library used by all frontend modules in this monorepo — the single source of UI components, styles, and design tokens.
+
+## Description
+
+Built with React, TypeScript, Tailwind CSS, and shadcn/ui patterns. This is a library package — not a standalone application. No build step required; consumers import directly from source. Other modules install it as `"@allsetlabs/reusable": "file:../forge"` (or `file:../../forge` for nested paths) and import via TypeScript path aliases.
+
+## Architecture
 
 ```
 src/
 ├── components/
-│   ├── ui/                  # shadcn/ui components (Button, Dialog, Card, etc.)
-│   ├── ai-elements/         # AI SDK element components (@ai-elements registry)
+│   ├── ui/                  # shadcn/ui primitives (Button, Dialog, Card, etc.)
+│   ├── ai-elements/         # @ai-elements registry components (chat, code, terminal)
 │   └── auth-login/          # Authentication/login components
 ├── statefulComponents/      # Components with internal state (auth, theme, audio, cursor)
 ├── hooks/                   # Custom React hooks
 ├── icons/                   # Custom icon components
-├── lib/                     # Utility functions (cn(), resume generator, etc.)
+├── lib/                     # Utilities (cn(), resume generator, etc.)
 ├── styles/                  # Global styles, CSS variables, theme system
 ├── types/                   # TypeScript type definitions
 └── InitializeReusableChunks.tsx  # Required root wrapper — sets up providers and styles
 ```
 
-## How Other Modules Use This Library
+Stack: React + TypeScript + Tailwind CSS v3 + shadcn/ui + Radix UI + CVA.
 
-### Installation
+## Progress
 
-```bash
-npm install github:subbiah2806/component
+Stable and in active use across all modules. New components are added on demand as consuming modules need them.
+
+## Consuming Module Setup
+
+**Install:** add `"@allsetlabs/reusable": "file:../forge"` to `package.json`
+
+**TypeScript paths** — add to `tsconfig.json`:
+```json
+{ "paths": { "@allsetlabs/reusable/*": ["./node_modules/@allsetlabs/reusable/src/*"] } }
 ```
 
-### Setup in a consuming module
+**Tailwind config** — extend the library's base config:
+```js
+import baseConfig from '@allsetlabs/reusable/tailwind.config';
+export default { ...baseConfig };
+```
 
-1. **TypeScript paths** — add to `tsconfig.json`:
+**Root wrapper** — wrap app with `InitializeReusableChunks` (imports styles, initializes providers):
+```tsx
+import { InitializeReusableChunks } from '@allsetlabs/reusable/InitializeReusableChunks';
+```
 
-   ```json
-   {
-     "compilerOptions": {
-       "paths": {
-         "@allsetlabs/reusable/*": ["./node_modules/@allsetlabs/reusable/src/*"]
-       }
-     }
-   }
-   ```
-
-2. **Tailwind config** — extend the library's base config:
-
-   ```js
-   import baseConfig from '@allsetlabs/reusable/tailwind.config';
-   export default { ...baseConfig };
-   ```
-
-3. **Root wrapper** — wrap the app with `InitializeReusableChunks` (auto-imports styles and initializes all providers):
-
-   ```tsx
-   import { InitializeReusableChunks } from '@allsetlabs/reusable/InitializeReusableChunks';
-
-   function App() {
-     return (
-       <InitializeReusableChunks>
-         <YourApp />
-       </InitializeReusableChunks>
-     );
-   }
-   ```
-
-### Importing components
-
+**Import components:**
 ```tsx
 import { Button } from '@allsetlabs/reusable/components/ui/button';
-import type { ButtonProps } from '@allsetlabs/reusable/components/ui/button';
 ```
 
-## Working on Components
+## Adding New Components
 
-### Where things live
-
-Each component has its own `.tsx` file and a co-located `.md` doc file. When modifying or creating a component, update both. Every UI component doc is linked from `how_to_use_this_library.md` — keep that index current.
-
-### Component categories
-
-- **UI components** (`components/ui/`) — shadcn/ui primitives built on Radix UI. These are the building blocks all modules use for buttons, inputs, dialogs, cards, etc.
-- **AI element components** (`components/ai-elements/`) — components from the [@ai-elements registry](https://elements.ai-sdk.dev) for AI-powered interfaces (chat, code blocks, reasoning, terminals, etc.)
-- **Stateful components** (`statefulComponents/`) — components with built-in state management: auth, theme, audio, cursor, extension auth. These are auto-initialized by `InitializeReusableChunks`.
-- **Utility components** (`components/`) — DataFetchWrapper, BackgroundGradient, ErrorBoundary.
-
-### Adding new components
-
-1. Create the `.tsx` file in the appropriate directory
+1. Create `.tsx` in the appropriate directory
 2. Create a co-located `.md` doc with usage examples
-3. Add the component to the `how_to_use_this_library.md` index
-4. Follow shadcn/ui patterns: use CVA for variants, Radix UI for headless behavior, `cn()` for class merging
+3. Add to `how_to_use_this_library.md` index
+4. Follow shadcn/ui patterns: CVA for variants, Radix UI for headless behavior, `cn()` for class merging
 
-### Adding components from external registries
-
-shadcn/ui CLI can install from multiple registries configured in `components.json`:
-
+**Install from registries:**
 ```bash
-# Default shadcn registry
-npx shadcn@latest add button
-
-# Namespaced registries
-npx shadcn@latest add @ai-elements/message
-npx shadcn@latest add @magicui/animated-beam
-
-# ReactBits
-npx shadcn@latest add https://reactbits.dev/r/[component-name]
-
-# 8StarLabs
-npx shadcn@latest add https://ui.8starlabs.com/r/{name}.json
+npx shadcn@latest add button                             # shadcn default
+npx shadcn@latest add @ai-elements/message               # ai-elements
+npx shadcn@latest add https://reactbits.dev/r/[name]    # ReactBits
+npx shadcn@latest add https://ui.8starlabs.com/r/{name}.json  # 8StarLabs
 ```
 
-After installing external components: convert to TypeScript if needed, adapt imports to library path structure, ensure Tailwind compatibility, and add documentation.
+After installing: convert to TypeScript, adapt imports to library path structure, ensure Tailwind compatibility, add docs.
 
-### Styles and theming
+## Styles and Theming
 
-All colors and theme variables are defined in `src/styles/`. See [styles.md](./src/styles/styles.md) for the full CSS variable reference.
-
-### Updating documentation
-
-Run `/update-docs sync-changes` after making changes (if the command is available), or manually update the component's `.md` file and the `how_to_use_this_library.md` index.
+All colors and CSS variables are in `src/styles/`. See `src/styles/styles.md` for the full reference. Do not use default Tailwind colors — use only the CSS variables defined there.
