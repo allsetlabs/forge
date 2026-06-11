@@ -8,7 +8,7 @@ Interactive activity heatmap component displaying time-series data with customiz
 import Heatmap, {
   type HeatmapData,
   type HeatmapValue,
-} from '@allsetlabs/reusable/components/ui/heatmap';
+} from '@allsetlabs/forge/components/ui/heatmap';
 ```
 
 ## Features

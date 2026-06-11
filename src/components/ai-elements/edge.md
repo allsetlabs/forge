@@ -5,7 +5,7 @@ Custom edge components for React Flow canvas with animated and temporary variant
 ## Import
 
 ```tsx
-import { Edge } from '@allsetlabs/reusable/components/ai-elements/edge';
+import { Edge } from '@allsetlabs/forge/components/ai-elements/edge';
 ```
 
 ## Features
@@ -19,8 +19,8 @@ import { Edge } from '@allsetlabs/reusable/components/ai-elements/edge';
 ## Basic Usage
 
 ```tsx
-import { Canvas } from '@allsetlabs/reusable/components/ai-elements/canvas';
-import { Edge } from '@allsetlabs/reusable/components/ai-elements/edge';
+import { Canvas } from '@allsetlabs/forge/components/ai-elements/canvas';
+import { Edge } from '@allsetlabs/forge/components/ai-elements/edge';
 
 const edgeTypes = {
   animated: Edge.Animated,
@@ -73,8 +73,8 @@ Dashed line for temporary connections (drag preview).
 ### Example 1: Basic Animated Edges
 
 ```tsx
-import { Canvas } from '@allsetlabs/reusable/components/ai-elements/canvas';
-import { Edge } from '@allsetlabs/reusable/components/ai-elements/edge';
+import { Canvas } from '@allsetlabs/forge/components/ai-elements/canvas';
+import { Edge } from '@allsetlabs/forge/components/ai-elements/edge';
 
 const nodes = [
   { id: '1', position: { x: 0, y: 0 }, data: { label: 'Node 1' } },
@@ -123,7 +123,7 @@ const edgeTypes = {
 ### Example 3: Custom Connection Line
 
 ```tsx
-import { Connection } from '@allsetlabs/reusable/components/ai-elements/connection';
+import { Connection } from '@allsetlabs/forge/components/ai-elements/connection';
 
 <Canvas
   nodes={nodes}

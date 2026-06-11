@@ -10,7 +10,7 @@ import {
   PopoverTrigger,
   PopoverContent,
   PopoverAnchor,
-} from '@allsetlabs/reusable/components/ui/popover';
+} from '@allsetlabs/forge/components/ui/popover';
 ```
 
 ## Features
@@ -144,7 +144,7 @@ const [open, setOpen] = useState(false);
 ### Date Picker Popover
 
 ```tsx
-import { Calendar } from '@allsetlabs/reusable/components/ui/calendar';
+import { Calendar } from '@allsetlabs/forge/components/ui/calendar';
 
 <Popover>
   <PopoverTrigger asChild>

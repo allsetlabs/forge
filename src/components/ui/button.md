@@ -5,7 +5,7 @@ Versatile button component with multiple style variants, sizes, and polymorphic 
 ## Import
 
 ```tsx
-import { Button } from '@allsetlabs/reusable/components/ui/button';
+import { Button } from '@allsetlabs/forge/components/ui/button';
 ```
 
 ## Features

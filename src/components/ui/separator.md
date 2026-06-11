@@ -5,7 +5,7 @@ Visual divider component built on Radix UI for separating content horizontally o
 ## Import
 
 ```tsx
-import { Separator } from '@allsetlabs/reusable/components/ui/separator';
+import { Separator } from '@allsetlabs/forge/components/ui/separator';
 ```
 
 ## Features

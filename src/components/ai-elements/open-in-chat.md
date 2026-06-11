@@ -18,7 +18,7 @@ import {
   OpenInScira,
   OpenInv0,
   OpenInCursor,
-} from '@allsetlabs/reusable/components/ai-elements/open-in-chat';
+} from '@allsetlabs/forge/components/ai-elements/open-in-chat';
 ```
 
 ## Features

@@ -10,7 +10,7 @@ import {
   type SlashCommandItem,
   type SlashCommandGroup,
   type SlashCommandPickerProps,
-} from '@allsetlabs/reusable/components/ui/slash-command-picker';
+} from '@allsetlabs/forge/components/ui/slash-command-picker';
 ```
 
 ## Features

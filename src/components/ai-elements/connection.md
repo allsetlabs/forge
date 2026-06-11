@@ -5,7 +5,7 @@ Connection line component for React Flow canvas with animated endpoint.
 ## Import
 
 ```tsx
-import { Connection } from '@allsetlabs/reusable/components/ai-elements/connection';
+import { Connection } from '@allsetlabs/forge/components/ai-elements/connection';
 ```
 
 ## Features
@@ -18,8 +18,8 @@ import { Connection } from '@allsetlabs/reusable/components/ai-elements/connecti
 ## Basic Usage
 
 ```tsx
-import { Canvas } from '@allsetlabs/reusable/components/ai-elements/canvas';
-import { Connection } from '@allsetlabs/reusable/components/ai-elements/connection';
+import { Canvas } from '@allsetlabs/forge/components/ai-elements/canvas';
+import { Connection } from '@allsetlabs/forge/components/ai-elements/connection';
 
 <Canvas connectionLineComponent={Connection} nodes={nodes} edges={edges}>
   {/* Canvas content */}
@@ -46,8 +46,8 @@ This component is a `ConnectionLineComponent` from React Flow and receives props
 ### Example 1: Basic Canvas with Connection Line
 
 ```tsx
-import { Canvas } from '@allsetlabs/reusable/components/ai-elements/canvas';
-import { Connection } from '@allsetlabs/reusable/components/ai-elements/connection';
+import { Canvas } from '@allsetlabs/forge/components/ai-elements/canvas';
+import { Connection } from '@allsetlabs/forge/components/ai-elements/connection';
 import { Background } from '@xyflow/react';
 
 <Canvas
@@ -68,8 +68,8 @@ import { Background } from '@xyflow/react';
 ### Example 2: Agent Workflow Canvas
 
 ```tsx
-import { Canvas } from '@allsetlabs/reusable/components/ai-elements/canvas';
-import { Connection } from '@allsetlabs/reusable/components/ai-elements/connection';
+import { Canvas } from '@allsetlabs/forge/components/ai-elements/canvas';
+import { Connection } from '@allsetlabs/forge/components/ai-elements/connection';
 import { Controls, MiniMap } from '@xyflow/react';
 
 <div style={{ height: 600 }}>

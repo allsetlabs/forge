@@ -12,7 +12,7 @@ import {
   CarouselPrevious,
   CarouselNext,
   type CarouselApi,
-} from '@allsetlabs/reusable/components/ui/carousel';
+} from '@allsetlabs/forge/components/ui/carousel';
 ```
 
 ## Features

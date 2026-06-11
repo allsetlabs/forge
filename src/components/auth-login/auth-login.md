@@ -5,8 +5,8 @@ Complete OAuth login page component with support for multiple providers and buil
 ## Import
 
 ```tsx
-import { AuthLogin } from '@allsetlabs/reusable/components/auth-login';
-import type { AuthLoginProps } from '@allsetlabs/reusable/components/auth-login';
+import { AuthLogin } from '@allsetlabs/forge/components/auth-login';
+import type { AuthLoginProps } from '@allsetlabs/forge/components/auth-login';
 ```
 
 ## Features
@@ -24,7 +24,7 @@ import type { AuthLoginProps } from '@allsetlabs/reusable/components/auth-login'
 ## Basic Usage
 
 ```tsx
-import { AuthLogin } from '@allsetlabs/reusable/components/auth-login';
+import { AuthLogin } from '@allsetlabs/forge/components/auth-login';
 
 function LoginPage() {
   const handleSuccess = async (credential: string) => {
@@ -61,8 +61,8 @@ function LoginPage() {
 ### Example 1: Basic Google Login
 
 ```tsx
-import { AuthLogin } from '@allsetlabs/reusable/components/auth-login';
-import { useAuth } from '@allsetlabs/reusable/statefulComponents/auth';
+import { AuthLogin } from '@allsetlabs/forge/components/auth-login';
+import { useAuth } from '@allsetlabs/forge/statefulComponents/auth';
 import { authApi } from '../utils/api';
 
 function LoginPage() {
@@ -99,9 +99,9 @@ function LoginPage() {
 ### Example 2: Login with Error Handling
 
 ```tsx
-import { AuthLogin } from '@allsetlabs/reusable/components/auth-login';
-import { useAuth } from '@allsetlabs/reusable/statefulComponents/auth';
-import { useToast } from '@allsetlabs/reusable/hooks/use-toast';
+import { AuthLogin } from '@allsetlabs/forge/components/auth-login';
+import { useAuth } from '@allsetlabs/forge/statefulComponents/auth';
+import { useToast } from '@allsetlabs/forge/hooks/use-toast';
 import { authApi } from '../utils/api';
 
 function LoginPage() {
@@ -149,14 +149,14 @@ function LoginPage() {
 ### Example 3: Login Modal with Custom Styling
 
 ```tsx
-import { AuthLogin } from '@allsetlabs/reusable/components/auth-login';
+import { AuthLogin } from '@allsetlabs/forge/components/auth-login';
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from '@allsetlabs/reusable/components/ui/dialog';
-import { useAuth } from '@allsetlabs/reusable/statefulComponents/auth';
+} from '@allsetlabs/forge/components/ui/dialog';
+import { useAuth } from '@allsetlabs/forge/statefulComponents/auth';
 import { authApi } from '../utils/api';
 
 function LoginModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
@@ -194,17 +194,17 @@ function LoginModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void 
 ### Example 4: Pre-Login Page with Other Options
 
 ```tsx
-import { AuthLogin } from '@allsetlabs/reusable/components/auth-login';
-import { Button } from '@allsetlabs/reusable/components/ui/button';
+import { AuthLogin } from '@allsetlabs/forge/components/auth-login';
+import { Button } from '@allsetlabs/forge/components/ui/button';
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from '@allsetlabs/reusable/components/ui/card';
-import { useAuth } from '@allsetlabs/reusable/statefulComponents/auth';
-import { Separator } from '@allsetlabs/reusable/components/ui/separator';
+} from '@allsetlabs/forge/components/ui/card';
+import { useAuth } from '@allsetlabs/forge/statefulComponents/auth';
+import { Separator } from '@allsetlabs/forge/components/ui/separator';
 import { authApi } from '../utils/api';
 
 function LoginPage() {
@@ -258,8 +258,8 @@ function LoginPage() {
 ### Example 5: Integration with Route Guards
 
 ```tsx
-import { AuthLogin } from '@allsetlabs/reusable/components/auth-login';
-import { useAuth } from '@allsetlabs/reusable/statefulComponents/auth';
+import { AuthLogin } from '@allsetlabs/forge/components/auth-login';
+import { useAuth } from '@allsetlabs/forge/statefulComponents/auth';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { authApi } from '../utils/api';
@@ -307,7 +307,7 @@ The consuming module must wrap the application with `GoogleOAuthProvider` at the
 ```tsx
 // main.tsx or entry point
 import { GoogleOAuthProvider } from '@react-oauth/google';
-import { AuthProvider } from '@allsetlabs/reusable/statefulComponents/auth';
+import { AuthProvider } from '@allsetlabs/forge/statefulComponents/auth';
 import App from './App';
 
 const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
@@ -453,7 +453,7 @@ return <AuthLogin onSuccessLogin={handleSuccess} />;
 
 ```tsx
 // In your header/navbar component
-import { Button } from '@allsetlabs/reusable/components/ui/button';
+import { Button } from '@allsetlabs/forge/components/ui/button';
 
 const { user, logout } = useAuth();
 

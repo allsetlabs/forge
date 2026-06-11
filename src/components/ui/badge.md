@@ -5,7 +5,7 @@ Compact label component with multiple style variants for displaying status, cate
 ## Import
 
 ```tsx
-import { Badge } from '@allsetlabs/reusable/components/ui/badge';
+import { Badge } from '@allsetlabs/forge/components/ui/badge';
 ```
 
 ## Features

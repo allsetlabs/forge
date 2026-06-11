@@ -12,7 +12,7 @@ import {
   FileTreeIcon,
   FileTreeName,
   FileTreeActions,
-} from '@allsetlabs/reusable/components/ai-elements/file-tree';
+} from '@allsetlabs/forge/components/ai-elements/file-tree';
 ```
 
 ## Features

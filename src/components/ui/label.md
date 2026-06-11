@@ -5,7 +5,7 @@ Accessible form label component built on Radix UI primitives with consistent sty
 ## Import
 
 ```tsx
-import { Label } from '@allsetlabs/reusable/components/ui/label';
+import { Label } from '@allsetlabs/forge/components/ui/label';
 ```
 
 ## Features

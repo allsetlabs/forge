@@ -9,7 +9,7 @@ import {
   HoverCard,
   HoverCardTrigger,
   HoverCardContent,
-} from '@allsetlabs/reusable/components/ui/hover-card';
+} from '@allsetlabs/forge/components/ui/hover-card';
 ```
 
 ## Features
@@ -28,7 +28,7 @@ import {
   HoverCard,
   HoverCardTrigger,
   HoverCardContent,
-} from '@allsetlabs/reusable/components/ui/hover-card';
+} from '@allsetlabs/forge/components/ui/hover-card';
 
 function Example() {
   return (

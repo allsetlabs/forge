@@ -11,7 +11,7 @@ import {
   TaskContent,
   TaskItem,
   TaskItemFile,
-} from '@allsetlabs/reusable/components/ai-elements/task';
+} from '@allsetlabs/forge/components/ai-elements/task';
 ```
 
 ## Features

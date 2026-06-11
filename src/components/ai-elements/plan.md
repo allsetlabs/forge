@@ -14,7 +14,7 @@ import {
   PlanContent,
   PlanFooter,
   PlanTrigger,
-} from '@allsetlabs/reusable/components/ai-elements/plan';
+} from '@allsetlabs/forge/components/ai-elements/plan';
 ```
 
 ## Features

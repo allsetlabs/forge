@@ -12,7 +12,7 @@ type Story = StoryObj;
 
 export const Default: Story = {
   render: () => (
-    <Snippet code="npm install @allsetlabs/reusable">
+    <Snippet code="npm install @allsetlabs/forge">
       <SnippetText>$</SnippetText>
       <SnippetInput />
       <SnippetCopyButton />

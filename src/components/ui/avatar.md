@@ -5,7 +5,7 @@ A component to display user profile images with automatic fallback support.
 ## Import
 
 ```tsx
-import { Avatar, AvatarImage, AvatarFallback } from '@allsetlabs/reusable/components/ui/avatar';
+import { Avatar, AvatarImage, AvatarFallback } from '@allsetlabs/forge/components/ui/avatar';
 ```
 
 ## Features

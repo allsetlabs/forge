@@ -5,7 +5,7 @@
 Merges and deduplicates Tailwind CSS class names.
 
 ```tsx
-import { cn } from '@allsetlabs/reusable/lib/utils';
+import { cn } from '@allsetlabs/forge/lib/utils';
 
 cn('px-4 py-2'); // "px-4 py-2"
 cn('p-4', 'p-6'); // "p-6" (later overrides earlier)

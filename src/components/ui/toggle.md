@@ -5,7 +5,7 @@ A two-state button that can be on or off, useful for boolean settings and toolba
 ## Import
 
 ```tsx
-import { Toggle, toggleVariants } from '@allsetlabs/reusable/components/ui/toggle';
+import { Toggle, toggleVariants } from '@allsetlabs/forge/components/ui/toggle';
 ```
 
 ## Features
@@ -20,7 +20,7 @@ import { Toggle, toggleVariants } from '@allsetlabs/reusable/components/ui/toggl
 ## Basic Usage
 
 ```tsx
-import { Toggle } from '@allsetlabs/reusable/components/ui/toggle';
+import { Toggle } from '@allsetlabs/forge/components/ui/toggle';
 import { Bold } from 'lucide-react';
 
 function Example() {
@@ -239,7 +239,7 @@ const toggleFormat = (format: keyof typeof formatting) => {
 ### Using toggleVariants Helper
 
 ```tsx
-import { toggleVariants } from '@allsetlabs/reusable/components/ui/toggle';
+import { toggleVariants } from '@allsetlabs/forge/components/ui/toggle';
 
 // Use variants in custom components
 <button className={toggleVariants({ variant: 'outline', size: 'lg' })}>Custom Toggle</button>;

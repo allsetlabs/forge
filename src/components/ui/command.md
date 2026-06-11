@@ -15,7 +15,7 @@ import {
   CommandItem,
   CommandShortcut,
   CommandSeparator,
-} from '@allsetlabs/reusable/components/ui/command';
+} from '@allsetlabs/forge/components/ui/command';
 ```
 
 ## Features
@@ -37,7 +37,7 @@ import {
   CommandList,
   CommandGroup,
   CommandItem,
-} from '@allsetlabs/reusable/components/ui/command';
+} from '@allsetlabs/forge/components/ui/command';
 
 function Example() {
   return (

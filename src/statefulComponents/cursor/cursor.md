@@ -5,15 +5,15 @@ Custom animated cursor system with provider, context hook, and toggle button for
 ## Import
 
 ```tsx
-import { useCursorContext } from '@allsetlabs/reusable/statefulComponents/cursor/context';
-import CursorToggle from '@allsetlabs/reusable/statefulComponents/cursor/toggle';
+import { useCursorContext } from '@allsetlabs/forge/statefulComponents/cursor/context';
+import CursorToggle from '@allsetlabs/forge/statefulComponents/cursor/toggle';
 ```
 
 ## Provider Initialization
 
-**CursorProvider is automatically initialized in `InitializeReusableChunks`.**
+**CursorProvider is automatically initialized in `InitializeForgeChunks`.**
 
-You do **not** need to manually wrap your app with `CursorProvider` - it's already included when you use `InitializeReusableChunks` at your app root.
+You do **not** need to manually wrap your app with `CursorProvider` - it's already included when you use `InitializeForgeChunks` at your app root.
 
 ## Features
 
@@ -29,7 +29,7 @@ You do **not** need to manually wrap your app with `CursorProvider` - it's alrea
 ## Basic Usage
 
 ```tsx
-import CursorToggle from '@allsetlabs/reusable/statefulComponents/cursor/toggle';
+import CursorToggle from '@allsetlabs/forge/statefulComponents/cursor/toggle';
 
 function Header() {
   return (
@@ -86,7 +86,7 @@ Hook to access cursor state and controls.
 ### Example 1: Using Toggle Button
 
 ```tsx
-import CursorToggle from '@allsetlabs/reusable/statefulComponents/cursor/toggle';
+import CursorToggle from '@allsetlabs/forge/statefulComponents/cursor/toggle';
 
 function Header() {
   return (
@@ -105,7 +105,7 @@ function Header() {
 ### Example 2: Using Cursor Context
 
 ```tsx
-import { useCursorContext } from '@allsetlabs/reusable/statefulComponents/cursor/context';
+import { useCursorContext } from '@allsetlabs/forge/statefulComponents/cursor/context';
 
 function CursorIndicator() {
   const { isEnabled, canUseCursor } = useCursorContext();
@@ -125,7 +125,7 @@ function CursorIndicator() {
 ### Example 3: Programmatic Control
 
 ```tsx
-import { useCursorContext } from '@allsetlabs/reusable/statefulComponents/cursor/context';
+import { useCursorContext } from '@allsetlabs/forge/statefulComponents/cursor/context';
 
 function Settings() {
   const { isEnabled, toggleCursor, canUseCursor } = useCursorContext();
@@ -166,7 +166,7 @@ function CustomCard() {
 ### Example 5: Custom Toggle with Callback
 
 ```tsx
-import CursorToggle from '@allsetlabs/reusable/statefulComponents/cursor/toggle';
+import CursorToggle from '@allsetlabs/forge/statefulComponents/cursor/toggle';
 
 function Header() {
   const handleToggle = () => {
@@ -196,7 +196,7 @@ On mount, checks:
 
 1. Checks localStorage for saved preference
 2. If no preference, enables by default on supported devices
-3. Injects CSS rule to hide native cursor: `#reusables-app-root.custom-cursor-enabled * { cursor: none !important; }`
+3. Injects CSS rule to hide native cursor: `#forge-app-root.custom-cursor-enabled * { cursor: none !important; }`
 4. Adds 'custom-cursor-enabled' class to the target element when active
 
 ### Cursor Tracking
@@ -286,13 +286,13 @@ const { isEnabled, toggleCursor, canUseCursor } = useCursorContext();
 
 ## Notes
 
-- CursorProvider is **automatically initialized in `InitializeReusableChunks`** - no manual setup required
+- CursorProvider is **automatically initialized in `InitializeForgeChunks`** - no manual setup required
 - Custom cursor elements are rendered by provider (not manually)
 - Uses position: fixed with z-index 9999 for cursor elements
 - Cursor elements use pointer-events-none to not interfere with clicks
 - Uses RAF throttling for optimal performance
 - Single mousemove listener for efficiency
-- CSS rule is scoped to `#reusables-app-root` and cleaned up on unmount
+- CSS rule is scoped to `#forge-app-root` and cleaned up on unmount
 - Default enabled on supported devices (user must opt-out)
 - localStorage saves preference as string ('true' or 'false')
 - CursorToggle uses Button component from UI library

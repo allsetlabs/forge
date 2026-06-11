@@ -5,7 +5,7 @@ Display base64-encoded images from AI-generated image responses.
 ## Import
 
 ```tsx
-import { Image } from '@allsetlabs/reusable/components/ai-elements/image';
+import { Image } from '@allsetlabs/forge/components/ai-elements/image';
 ```
 
 ## Features

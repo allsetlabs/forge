@@ -8,8 +8,8 @@ Authentication state management for Chrome extensions that reads auth data from 
 import {
   ExtensionAuthProvider,
   useExtensionAuth,
-} from '@allsetlabs/reusable/statefulComponents/extensionAuth';
-import type { ExtensionAuthContextType } from '@allsetlabs/reusable/statefulComponents/extensionAuth';
+} from '@allsetlabs/forge/statefulComponents/extensionAuth';
+import type { ExtensionAuthContextType } from '@allsetlabs/forge/statefulComponents/extensionAuth';
 ```
 
 ## Features
@@ -27,7 +27,7 @@ import type { ExtensionAuthContextType } from '@allsetlabs/reusable/statefulComp
 import {
   ExtensionAuthProvider,
   useExtensionAuth,
-} from '@allsetlabs/reusable/statefulComponents/extensionAuth';
+} from '@allsetlabs/forge/statefulComponents/extensionAuth';
 
 // In extension popup or page
 function App() {
@@ -87,7 +87,7 @@ Hook to access extension authentication state.
 import {
   ExtensionAuthProvider,
   useExtensionAuth,
-} from '@allsetlabs/reusable/statefulComponents/extensionAuth';
+} from '@allsetlabs/forge/statefulComponents/extensionAuth';
 
 function Popup() {
   return (
@@ -134,7 +134,7 @@ function PopupContent() {
 import {
   ExtensionAuthProvider,
   useExtensionAuth,
-} from '@allsetlabs/reusable/statefulComponents/extensionAuth';
+} from '@allsetlabs/forge/statefulComponents/extensionAuth';
 
 function ContentScriptUI() {
   return (

@@ -6,7 +6,7 @@
  *
  * @example
  * ```tsx
- * import { AuthProvider, useAuth } from '@allsetlabs/reusable/statefulComponents/auth';
+ * import { AuthProvider, useAuth } from '@allsetlabs/forge/statefulComponents/auth';
  *
  * // Wrap your app with AuthProvider
  * <AuthProvider>

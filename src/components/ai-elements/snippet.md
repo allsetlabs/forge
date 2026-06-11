@@ -11,7 +11,7 @@ import {
   SnippetText,
   SnippetInput,
   SnippetCopyButton,
-} from '@allsetlabs/reusable/components/ai-elements/snippet';
+} from '@allsetlabs/forge/components/ai-elements/snippet';
 ```
 
 ## Features
@@ -24,7 +24,7 @@ import {
 ## Basic Usage
 
 ```tsx
-<Snippet code="npm install @allsetlabs/reusable">
+<Snippet code="npm install @allsetlabs/forge">
   <SnippetInput />
   <SnippetCopyButton />
 </Snippet>

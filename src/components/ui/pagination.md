@@ -13,7 +13,7 @@ import {
   PaginationPrevious,
   PaginationNext,
   PaginationEllipsis,
-} from '@allsetlabs/reusable/components/ui/pagination';
+} from '@allsetlabs/forge/components/ui/pagination';
 ```
 
 ## Features

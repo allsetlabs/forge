@@ -9,7 +9,7 @@ import {
   Checkpoint,
   CheckpointIcon,
   CheckpointTrigger,
-} from '@allsetlabs/reusable/components/ai-elements/checkpoint';
+} from '@allsetlabs/forge/components/ai-elements/checkpoint';
 ```
 
 ## Features

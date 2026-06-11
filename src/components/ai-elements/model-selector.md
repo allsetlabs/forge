@@ -20,7 +20,7 @@ import {
   ModelSelectorLogo,
   ModelSelectorLogoGroup,
   ModelSelectorName,
-} from '@allsetlabs/reusable/components/ai-elements/model-selector';
+} from '@allsetlabs/forge/components/ai-elements/model-selector';
 ```
 
 ## Features

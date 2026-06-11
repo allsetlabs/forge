@@ -10,7 +10,7 @@ import {
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
-} from '@allsetlabs/reusable/components/ui/accordion';
+} from '@allsetlabs/forge/components/ui/accordion';
 ```
 
 ## Features

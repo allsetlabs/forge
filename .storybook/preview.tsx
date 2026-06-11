@@ -29,7 +29,7 @@ const preview: Preview = {
 
       return (
         <div
-          id="reusables-app-root"
+          id="forge-app-root"
           style={{
             ...(isStory && { minHeight: '100vh', minWidth: '100vw' }),
             display: 'flex',
@@ -49,7 +49,7 @@ const preview: Preview = {
         dark: 'dark',
       },
       defaultTheme: 'light',
-      parentSelector: '#reusables-app-root',
+      parentSelector: '#forge-app-root',
     }),
   ],
 };

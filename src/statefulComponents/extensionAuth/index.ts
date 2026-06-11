@@ -13,7 +13,7 @@
  *
  * @example
  * ```tsx
- * import { ExtensionAuthProvider, useExtensionAuth } from '@allsetlabs/reusable/statefulComponents/extensionAuth';
+ * import { ExtensionAuthProvider, useExtensionAuth } from '@allsetlabs/forge/statefulComponents/extensionAuth';
  *
  * // Wrap your extension popup/page with ExtensionAuthProvider
  * function App() {

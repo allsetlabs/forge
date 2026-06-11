@@ -5,7 +5,7 @@ A checkbox component built on Radix UI with check indicator and accessible state
 ## Import
 
 ```tsx
-import { Checkbox } from '@allsetlabs/reusable/components/ui/checkbox';
+import { Checkbox } from '@allsetlabs/forge/components/ui/checkbox';
 ```
 
 ## Features

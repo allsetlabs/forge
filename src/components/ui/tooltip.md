@@ -10,7 +10,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@allsetlabs/reusable/components/ui/tooltip';
+} from '@allsetlabs/forge/components/ui/tooltip';
 ```
 
 ## Features

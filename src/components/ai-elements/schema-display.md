@@ -18,7 +18,7 @@ import {
   SchemaDisplayResponse,
   SchemaDisplayProperty,
   SchemaDisplayExample,
-} from '@allsetlabs/reusable/components/ai-elements/schema-display';
+} from '@allsetlabs/forge/components/ai-elements/schema-display';
 ```
 
 ## Features

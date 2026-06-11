@@ -1,5 +1,5 @@
 /**
- * Central export point for all reusable types
+ * Central export point for all forge types
  * This makes imports cleaner and provides a single source of truth
  */
 

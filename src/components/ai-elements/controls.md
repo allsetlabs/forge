@@ -5,7 +5,7 @@ Styled controls for React Flow canvas (zoom, fit view, etc.).
 ## Import
 
 ```tsx
-import { Controls } from '@allsetlabs/reusable/components/ai-elements/controls';
+import { Controls } from '@allsetlabs/forge/components/ai-elements/controls';
 ```
 
 ## Features
@@ -19,8 +19,8 @@ import { Controls } from '@allsetlabs/reusable/components/ai-elements/controls';
 ## Basic Usage
 
 ```tsx
-import { Canvas } from '@allsetlabs/reusable/components/ai-elements/canvas';
-import { Controls } from '@allsetlabs/reusable/components/ai-elements/controls';
+import { Canvas } from '@allsetlabs/forge/components/ai-elements/canvas';
+import { Controls } from '@allsetlabs/forge/components/ai-elements/controls';
 import { Background } from '@xyflow/react';
 
 <Canvas nodes={nodes} edges={edges}>
@@ -49,8 +49,8 @@ import { Background } from '@xyflow/react';
 ### Example 1: Full Controls
 
 ```tsx
-import { Canvas } from '@allsetlabs/reusable/components/ai-elements/canvas';
-import { Controls } from '@allsetlabs/reusable/components/ai-elements/controls';
+import { Canvas } from '@allsetlabs/forge/components/ai-elements/canvas';
+import { Controls } from '@allsetlabs/forge/components/ai-elements/controls';
 import { Background } from '@xyflow/react';
 
 <Canvas nodes={nodes} edges={edges} onNodesChange={onNodesChange}>

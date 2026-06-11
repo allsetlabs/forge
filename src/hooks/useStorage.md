@@ -5,7 +5,7 @@ A controlled/uncontrolled component pattern hook that provides fallback state ma
 ## Import
 
 ```tsx
-import { useStorage } from '@allsetlabs/reusable/hooks/useStorage';
+import { useStorage } from '@allsetlabs/forge/hooks/useStorage';
 ```
 
 ## Features

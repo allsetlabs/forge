@@ -5,7 +5,7 @@ A toggle switch component built on Radix UI with smooth animations and accessibl
 ## Import
 
 ```tsx
-import { Switch } from '@allsetlabs/reusable/components/ui/switch';
+import { Switch } from '@allsetlabs/forge/components/ui/switch';
 ```
 
 ## Features

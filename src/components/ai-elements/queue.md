@@ -21,7 +21,7 @@ import {
   QueueItemAttachment,
   QueueItemImage,
   QueueItemFile,
-} from '@allsetlabs/reusable/components/ai-elements/queue';
+} from '@allsetlabs/forge/components/ai-elements/queue';
 ```
 
 ## Features

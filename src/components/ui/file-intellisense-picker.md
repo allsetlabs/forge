@@ -9,7 +9,7 @@ import {
   FileIntellisensePicker,
   FileIntellisenseItem,
   FileIntellisensePickerProps,
-} from '@allsetlabs/reusable/components/ui/file-intellisense-picker';
+} from '@allsetlabs/forge/components/ui/file-intellisense-picker';
 ```
 
 ## Features
@@ -29,7 +29,7 @@ import {
   FileIntellisensePicker,
   FileIntellisenseItem,
   FileIntellisensePickerHandle,
-} from '@allsetlabs/reusable/components/ui/file-intellisense-picker';
+} from '@allsetlabs/forge/components/ui/file-intellisense-picker';
 
 export function FilePickerExample() {
   const pickerRef = useRef<FileIntellisensePickerHandle>(null);

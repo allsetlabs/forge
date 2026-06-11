@@ -18,7 +18,7 @@ import {
   MessageBranchPage,
   MessageResponse,
   MessageToolbar,
-} from '@allsetlabs/reusable/components/ai-elements/message';
+} from '@allsetlabs/forge/components/ai-elements/message';
 ```
 
 ## Features

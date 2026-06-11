@@ -5,7 +5,7 @@ Animated floating gradient orbs background component for modern, eye-catching vi
 ## Import
 
 ```tsx
-import BackgroundGradient from '@allsetlabs/reusable/components/BackgroundGradient';
+import BackgroundGradient from '@allsetlabs/forge/components/BackgroundGradient';
 ```
 
 ## Features

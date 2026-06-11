@@ -21,7 +21,7 @@ import {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuRadioGroup,
-} from '@allsetlabs/reusable/components/ui/context-menu';
+} from '@allsetlabs/forge/components/ui/context-menu';
 ```
 
 ## Features
@@ -42,7 +42,7 @@ import {
   ContextMenuTrigger,
   ContextMenuContent,
   ContextMenuItem,
-} from '@allsetlabs/reusable/components/ui/context-menu';
+} from '@allsetlabs/forge/components/ui/context-menu';
 
 function Example() {
   return (

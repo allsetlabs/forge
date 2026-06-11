@@ -14,7 +14,7 @@ import {
   TableRow,
   TableCell,
   TableCaption,
-} from '@allsetlabs/reusable/components/ui/table';
+} from '@allsetlabs/forge/components/ui/table';
 ```
 
 ## Features

@@ -5,7 +5,7 @@ Loading placeholder component with pulse animation for content that's being fetc
 ## Import
 
 ```tsx
-import { Skeleton } from '@allsetlabs/reusable/components/ui/skeleton';
+import { Skeleton } from '@allsetlabs/forge/components/ui/skeleton';
 ```
 
 ## Features

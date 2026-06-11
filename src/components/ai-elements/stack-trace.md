@@ -16,7 +16,7 @@ import {
   StackTraceExpandButton,
   StackTraceContent,
   StackTraceFrames,
-} from '@allsetlabs/reusable/components/ai-elements/stack-trace';
+} from '@allsetlabs/forge/components/ai-elements/stack-trace';
 ```
 
 ## Features

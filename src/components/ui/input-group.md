@@ -12,7 +12,7 @@ import {
   InputGroupText,
   InputGroupInput,
   InputGroupTextarea,
-} from '@allsetlabs/reusable/components/ui/input-group';
+} from '@allsetlabs/forge/components/ui/input-group';
 ```
 
 ## Features
@@ -203,7 +203,7 @@ import { Copy, ExternalLink } from 'lucide-react';
 
 ```tsx
 import { Search } from 'lucide-react';
-import { Kbd } from '@allsetlabs/reusable/components/ui/kbd';
+import { Kbd } from '@allsetlabs/forge/components/ui/kbd';
 
 <InputGroup>
   <InputGroupAddon align="inline-start">

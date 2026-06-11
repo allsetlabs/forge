@@ -20,7 +20,7 @@ import {
   CodeBlockLanguageSelectorContent,
   CodeBlockLanguageSelectorItem,
   highlightCode,
-} from '@allsetlabs/reusable/components/ai-elements/code-block';
+} from '@allsetlabs/forge/components/ai-elements/code-block';
 ```
 
 ## Features
@@ -178,7 +178,7 @@ const [language, setLanguage] = useState<BundledLanguage>('typescript');
 ### Manual Highlighting
 
 ```tsx
-import { highlightCode } from '@allsetlabs/reusable/components/ai-elements/code-block';
+import { highlightCode } from '@allsetlabs/forge/components/ai-elements/code-block';
 
 // Synchronous with callback for async result
 const tokens = highlightCode(code, 'typescript', (result) => {

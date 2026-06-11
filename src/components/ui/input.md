@@ -5,7 +5,7 @@ Styled text input component with consistent appearance and full HTML input funct
 ## Import
 
 ```tsx
-import { Input } from '@allsetlabs/reusable/components/ui/input';
+import { Input } from '@allsetlabs/forge/components/ui/input';
 ```
 
 ## Features

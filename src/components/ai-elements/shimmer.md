@@ -5,7 +5,7 @@ Animated text shimmer effect with gradient animation for loading states or empha
 ## Import
 
 ```tsx
-import { Shimmer } from '@allsetlabs/reusable/components/ai-elements/shimmer';
+import { Shimmer } from '@allsetlabs/forge/components/ai-elements/shimmer';
 ```
 
 ## Features

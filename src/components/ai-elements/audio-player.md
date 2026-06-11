@@ -17,7 +17,7 @@ import {
   AudioPlayerDurationDisplay,
   AudioPlayerMuteButton,
   AudioPlayerVolumeRange,
-} from '@allsetlabs/reusable/components/ai-elements/audio-player';
+} from '@allsetlabs/forge/components/ai-elements/audio-player';
 ```
 
 ## Features

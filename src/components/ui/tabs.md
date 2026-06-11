@@ -5,7 +5,7 @@ A tabs component built on Radix UI for organizing content into separate views wi
 ## Import
 
 ```tsx
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '@allsetlabs/reusable/components/ui/tabs';
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '@allsetlabs/forge/components/ui/tabs';
 ```
 
 ## Features

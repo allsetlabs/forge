@@ -21,7 +21,7 @@ export const Default: Story = {
 
 export const MinorUpdate: Story = {
   args: {
-    name: '@allsetlabs/reusable',
+    name: '@allsetlabs/forge',
     currentVersion: '1.0.0',
     newVersion: '1.1.0',
     changeType: 'minor',

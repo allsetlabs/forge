@@ -9,7 +9,7 @@ import {
   JSXPreview,
   JSXPreviewContent,
   JSXPreviewError,
-} from '@allsetlabs/reusable/components/ai-elements/jsx-preview';
+} from '@allsetlabs/forge/components/ai-elements/jsx-preview';
 ```
 
 ## Features

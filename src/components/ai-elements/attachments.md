@@ -17,7 +17,7 @@ import {
   AttachmentEmpty,
   getMediaCategory,
   getAttachmentLabel,
-} from '@allsetlabs/reusable/components/ai-elements/attachments';
+} from '@allsetlabs/forge/components/ai-elements/attachments';
 ```
 
 ## Features

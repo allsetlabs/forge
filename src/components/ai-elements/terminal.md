@@ -14,7 +14,7 @@ import {
   TerminalCopyButton,
   TerminalClearButton,
   TerminalContent,
-} from '@allsetlabs/reusable/components/ai-elements/terminal';
+} from '@allsetlabs/forge/components/ai-elements/terminal';
 ```
 
 ## Features

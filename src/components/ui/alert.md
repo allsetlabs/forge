@@ -10,7 +10,7 @@ import {
   AlertTitle,
   AlertDescription,
   alertVariants,
-} from '@allsetlabs/reusable/components/ui/alert';
+} from '@allsetlabs/forge/components/ui/alert';
 ```
 
 ## Features

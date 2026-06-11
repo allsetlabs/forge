@@ -17,7 +17,7 @@ import {
   EnvironmentVariableValue,
   EnvironmentVariableCopyButton,
   EnvironmentVariableRequired,
-} from '@allsetlabs/reusable/components/ai-elements/environment-variables';
+} from '@allsetlabs/forge/components/ai-elements/environment-variables';
 ```
 
 ## Features

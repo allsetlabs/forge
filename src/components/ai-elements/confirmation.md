@@ -13,7 +13,7 @@ import {
   ConfirmationRejected,
   ConfirmationActions,
   ConfirmationAction,
-} from '@allsetlabs/reusable/components/ai-elements/confirmation';
+} from '@allsetlabs/forge/components/ai-elements/confirmation';
 ```
 
 ## Features

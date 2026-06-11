@@ -1,16 +1,16 @@
-# InitializeReusableChunks
+# InitializeForgeChunks
 
 Setup component that initializes all necessary providers and styles for the component library.
 
 ## Import
 
 ```tsx
-import { InitializeReusableChunks } from '@allsetlabs/reusable/InitializeReusableChunks';
+import { InitializeForgeChunks } from '@allsetlabs/forge/InitializeForgeChunks';
 ```
 
 ## Overview
 
-`InitializeReusableChunks` is a wrapper component that sets up all required context providers and imports global styles. This is the **required** first step when using the component library in your application.
+`InitializeForgeChunks` is a wrapper component that sets up all required context providers and imports global styles. This is the **required** first step when using the component library in your application.
 
 **What it provides:**
 
@@ -47,13 +47,13 @@ import { InitializeReusableChunks } from '@allsetlabs/reusable/InitializeReusabl
 For apps that don't require authentication:
 
 ```tsx
-import { InitializeReusableChunks } from '@allsetlabs/reusable/InitializeReusableChunks';
+import { InitializeForgeChunks } from '@allsetlabs/forge/InitializeForgeChunks';
 
 function App() {
   return (
-    <InitializeReusableChunks applyToBody>
+    <InitializeForgeChunks applyToBody>
       <YourPublicApp />
-    </InitializeReusableChunks>
+    </InitializeForgeChunks>
   );
 }
 ```
@@ -63,14 +63,14 @@ function App() {
 For apps requiring Google OAuth authentication:
 
 ```tsx
-import { InitializeReusableChunks } from '@allsetlabs/reusable/InitializeReusableChunks';
+import { InitializeForgeChunks } from '@allsetlabs/forge/InitializeForgeChunks';
 import { authApi } from './utils/api';
 
 const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID;
 
 function App() {
   return (
-    <InitializeReusableChunks
+    <InitializeForgeChunks
       applyToBody
       auth={{
         googleClientId: GOOGLE_CLIENT_ID,
@@ -80,7 +80,7 @@ function App() {
       }}
     >
       <ProtectedApp />
-    </InitializeReusableChunks>
+    </InitializeForgeChunks>
   );
 }
 ```
@@ -131,17 +131,17 @@ Automatically imports all necessary CSS including:
 ### Example 1: Portfolio/Public Website (No Auth)
 
 ```tsx
-import { InitializeReusableChunks } from '@allsetlabs/reusable/InitializeReusableChunks';
-import { Button } from '@allsetlabs/reusable/components/ui/button';
+import { InitializeForgeChunks } from '@allsetlabs/forge/InitializeForgeChunks';
+import { Button } from '@allsetlabs/forge/components/ui/button';
 
 function App() {
   return (
-    <InitializeReusableChunks applyToBody>
+    <InitializeForgeChunks applyToBody>
       <div className="bg-background min-h-screen">
         <h1 className="text-foreground">My Portfolio</h1>
         <Button>View Projects</Button>
       </div>
-    </InitializeReusableChunks>
+    </InitializeForgeChunks>
   );
 }
 
@@ -151,7 +151,7 @@ export default App;
 ### Example 2: Authenticated Web App (Seekr)
 
 ```tsx
-import { InitializeReusableChunks } from '@allsetlabs/reusable/InitializeReusableChunks';
+import { InitializeForgeChunks } from '@allsetlabs/forge/InitializeForgeChunks';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { authApi } from './utils/api';
@@ -162,7 +162,7 @@ const queryClient = new QueryClient();
 
 function App() {
   return (
-    <InitializeReusableChunks
+    <InitializeForgeChunks
       applyToBody
       auth={{
         googleClientId: GOOGLE_CLIENT_ID,
@@ -178,7 +178,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       </QueryClientProvider>
-    </InitializeReusableChunks>
+    </InitializeForgeChunks>
   );
 }
 ```
@@ -186,16 +186,16 @@ function App() {
 ### Example 3: Chrome Extension (Scoped Styling)
 
 ```tsx
-import { InitializeReusableChunks } from '@allsetlabs/reusable/InitializeReusableChunks';
+import { InitializeForgeChunks } from '@allsetlabs/forge/InitializeForgeChunks';
 
 // For Chrome extensions, use applyToBody={false} for scoped styling
 function ExtensionPopup() {
   return (
-    <InitializeReusableChunks applyToBody={false}>
+    <InitializeForgeChunks applyToBody={false}>
       <div className="bg-background w-80 p-4">
         <h1 className="text-foreground">Extension Popup</h1>
       </div>
-    </InitializeReusableChunks>
+    </InitializeForgeChunks>
   );
 }
 ```
@@ -203,8 +203,8 @@ function ExtensionPopup() {
 ### Example 4: Accessing Auth Context
 
 ```tsx
-import { InitializeReusableChunks } from '@allsetlabs/reusable/InitializeReusableChunks';
-import { useAuth } from '@allsetlabs/reusable/statefulComponents/auth';
+import { InitializeForgeChunks } from '@allsetlabs/forge/InitializeForgeChunks';
+import { useAuth } from '@allsetlabs/forge/statefulComponents/auth';
 
 function UserProfile() {
   const { user, logout, isAuthenticated } = useAuth();
@@ -223,7 +223,7 @@ function UserProfile() {
 
 function App() {
   return (
-    <InitializeReusableChunks
+    <InitializeForgeChunks
       applyToBody
       auth={{
         googleClientId: 'your-client-id',
@@ -237,7 +237,7 @@ function App() {
       }}
     >
       <UserProfile />
-    </InitializeReusableChunks>
+    </InitializeForgeChunks>
   );
 }
 ```
@@ -245,7 +245,7 @@ function App() {
 ## TypeScript
 
 ```tsx
-import type { AuthTokenResponse } from '@allsetlabs/reusable/types/auth';
+import type { AuthTokenResponse } from '@allsetlabs/forge/types/auth';
 
 interface AuthConfig {
   googleClientId: string;
@@ -255,7 +255,7 @@ interface AuthConfig {
   enableExtensionBridge?: boolean;
 }
 
-interface InitializeReusableChunksProps {
+interface InitializeForgeChunksProps {
   children: ReactNode;
   applyToBody?: boolean;
   auth?: AuthConfig;
@@ -270,7 +270,7 @@ When `auth` prop is provided:
 ```
 1. User visits app
    ↓
-2. InitializeReusableChunks checks auth state
+2. InitializeForgeChunks checks auth state
    ↓
 3. If isLoading: Show loading spinner
    ↓

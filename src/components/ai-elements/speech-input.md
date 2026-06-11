@@ -5,7 +5,7 @@ Voice input button with browser speech recognition and fallback to MediaRecorder
 ## Import
 
 ```tsx
-import { SpeechInput } from '@allsetlabs/reusable/components/ai-elements/speech-input';
+import { SpeechInput } from '@allsetlabs/forge/components/ai-elements/speech-input';
 ```
 
 ## Features

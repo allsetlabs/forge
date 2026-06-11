@@ -10,7 +10,7 @@ import {
   SourcesTrigger,
   SourcesContent,
   Source,
-} from '@allsetlabs/reusable/components/ai-elements/sources';
+} from '@allsetlabs/forge/components/ai-elements/sources';
 ```
 
 ## Features

@@ -5,7 +5,7 @@ React Flow node toolbar component for displaying actions near nodes.
 ## Import
 
 ```tsx
-import { Toolbar } from '@allsetlabs/reusable/components/ai-elements/toolbar';
+import { Toolbar } from '@allsetlabs/forge/components/ai-elements/toolbar';
 ```
 
 ## Features

@@ -12,7 +12,7 @@ import {
   ConversationScrollButton,
   ConversationDownload,
   messagesToMarkdown,
-} from '@allsetlabs/reusable/components/ai-elements/conversation';
+} from '@allsetlabs/forge/components/ai-elements/conversation';
 ```
 
 ## Features

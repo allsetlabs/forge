@@ -5,7 +5,7 @@ React error boundary component that catches JavaScript errors in component tree 
 ## Import
 
 ```tsx
-import ErrorBoundary from '@allsetlabs/reusable/components/ErrorBoundary';
+import ErrorBoundary from '@allsetlabs/forge/components/ErrorBoundary';
 ```
 
 ## Features
@@ -40,7 +40,7 @@ import ErrorBoundary from '@allsetlabs/reusable/components/ErrorBoundary';
 ### Example 1: Wrap Entire App
 
 ```tsx
-import ErrorBoundary from '@allsetlabs/reusable/components/ErrorBoundary';
+import ErrorBoundary from '@allsetlabs/forge/components/ErrorBoundary';
 
 function App() {
   return (

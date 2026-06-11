@@ -22,7 +22,7 @@ import {
   usePromptInputController,
   usePromptInputAttachments,
   useProviderAttachments,
-} from '@allsetlabs/reusable/components/ai-elements/prompt-input';
+} from '@allsetlabs/forge/components/ai-elements/prompt-input';
 ```
 
 ## Features

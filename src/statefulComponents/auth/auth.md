@@ -5,15 +5,15 @@ Complete authentication state management system with provider, context hook, and
 ## Import
 
 ```tsx
-import { AuthProvider, useAuth } from '@allsetlabs/reusable/statefulComponents/auth';
-import type { AuthUser, AuthTokenResponse } from '@allsetlabs/reusable/types/auth';
+import { AuthProvider, useAuth } from '@allsetlabs/forge/statefulComponents/auth';
+import type { AuthUser, AuthTokenResponse } from '@allsetlabs/forge/types/auth';
 ```
 
 ## Provider Initialization
 
-**AuthProvider is automatically initialized in `InitializeReusableChunks`.**
+**AuthProvider is automatically initialized in `InitializeForgeChunks`.**
 
-You do **not** need to manually wrap your app with `AuthProvider` - it's already included when you use `InitializeReusableChunks` at your app root.
+You do **not** need to manually wrap your app with `AuthProvider` - it's already included when you use `InitializeForgeChunks` at your app root.
 
 ## Features
 
@@ -29,7 +29,7 @@ You do **not** need to manually wrap your app with `AuthProvider` - it's already
 ## Basic Usage
 
 ```tsx
-import { AuthProvider } from '@allsetlabs/reusable/statefulComponents/auth';
+import { AuthProvider } from '@allsetlabs/forge/statefulComponents/auth';
 
 function App() {
   return (
@@ -41,7 +41,7 @@ function App() {
 ```
 
 ```tsx
-import { useAuth } from '@allsetlabs/reusable/statefulComponents/auth';
+import { useAuth } from '@allsetlabs/forge/statefulComponents/auth';
 
 function Profile() {
   const { user, isAuthenticated, logout } = useAuth();
@@ -90,8 +90,8 @@ Hook to access authentication state and controls.
 ### Example 1: Basic Authentication Setup
 
 ```tsx
-import { AuthProvider } from '@allsetlabs/reusable/statefulComponents/auth';
-import { useAuth } from '@allsetlabs/reusable/statefulComponents/auth';
+import { AuthProvider } from '@allsetlabs/forge/statefulComponents/auth';
+import { useAuth } from '@allsetlabs/forge/statefulComponents/auth';
 
 function App() {
   return (
@@ -119,7 +119,7 @@ function MainApp() {
 ### Example 2: Custom Storage Keys
 
 ```tsx
-import { AuthProvider } from '@allsetlabs/reusable/statefulComponents/auth';
+import { AuthProvider } from '@allsetlabs/forge/statefulComponents/auth';
 
 // For multi-module apps with different storage namespaces
 function App() {
@@ -143,7 +143,7 @@ function App() {
 ### Example 2.5: Extension Bridge Mode
 
 ```tsx
-import { AuthProvider } from '@allsetlabs/reusable/statefulComponents/auth';
+import { AuthProvider } from '@allsetlabs/forge/statefulComponents/auth';
 
 // For web apps that need to sync auth with Chrome extension
 function App() {
@@ -162,8 +162,8 @@ function App() {
 ### Example 3: Login Integration
 
 ```tsx
-import { useAuth } from '@allsetlabs/reusable/statefulComponents/auth';
-import type { AuthTokenResponse } from '@allsetlabs/reusable/types/auth';
+import { useAuth } from '@allsetlabs/forge/statefulComponents/auth';
+import type { AuthTokenResponse } from '@allsetlabs/forge/types/auth';
 
 function LoginForm() {
   const { login, isLoading } = useAuth();
@@ -208,7 +208,7 @@ function LoginForm() {
 ### Example 4: Logout with Navigation
 
 ```tsx
-import { useAuth } from '@allsetlabs/reusable/statefulComponents/auth';
+import { useAuth } from '@allsetlabs/forge/statefulComponents/auth';
 import { useNavigate } from 'react-router-dom';
 
 function UserMenu() {
@@ -238,7 +238,7 @@ function UserMenu() {
 ### Example 5: Protected Routes
 
 ```tsx
-import { useAuth } from '@allsetlabs/reusable/statefulComponents/auth';
+import { useAuth } from '@allsetlabs/forge/statefulComponents/auth';
 
 function ProtectedRoute({ children }) {
   const { isAuthenticated, isLoading } = useAuth();
@@ -338,7 +338,7 @@ const { user, token, isLoading, isAuthenticated, login, logout } = useAuth();
 
 ## Notes
 
-- AuthProvider is **automatically initialized in `InitializeReusableChunks`** - no manual setup required
+- AuthProvider is **automatically initialized in `InitializeForgeChunks`** - no manual setup required
 - `useAuth` hook must be used within an AuthProvider subtree (throws error otherwise)
 - localStorage keys are configurable per module/app via AuthProvider props
 - `user` and `token` are stored separately in localStorage

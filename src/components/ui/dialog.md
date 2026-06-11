@@ -16,7 +16,7 @@ import {
   DialogClose,
   DialogPortal,
   DialogOverlay,
-} from '@allsetlabs/reusable/components/ui/dialog';
+} from '@allsetlabs/forge/components/ui/dialog';
 ```
 
 ## Features

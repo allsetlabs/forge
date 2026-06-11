@@ -5,15 +5,15 @@ Global audio feedback system with provider, context hook, and toggle button for 
 ## Import
 
 ```tsx
-import { useAudioContext } from '@allsetlabs/reusable/statefulComponents/audio/context';
-import { AudioToggle } from '@allsetlabs/reusable/statefulComponents/audio/toggle';
+import { useAudioContext } from '@allsetlabs/forge/statefulComponents/audio/context';
+import { AudioToggle } from '@allsetlabs/forge/statefulComponents/audio/toggle';
 ```
 
 ## Provider Initialization
 
-**AudioProvider is automatically initialized in `InitializeReusableChunks`.**
+**AudioProvider is automatically initialized in `InitializeForgeChunks`.**
 
-You do **not** need to manually wrap your app with `AudioProvider` - it's already included when you use `InitializeReusableChunks` at your app root.
+You do **not** need to manually wrap your app with `AudioProvider` - it's already included when you use `InitializeForgeChunks` at your app root.
 
 ## Features
 
@@ -27,7 +27,7 @@ You do **not** need to manually wrap your app with `AudioProvider` - it's alread
 ## Basic Usage
 
 ```tsx
-import { AudioToggle } from '@allsetlabs/reusable/statefulComponents/audio/toggle';
+import { AudioToggle } from '@allsetlabs/forge/statefulComponents/audio/toggle';
 
 function Header() {
   return (
@@ -79,7 +79,7 @@ Hook to access audio state and controls.
 ### Example 1: Using Toggle Button
 
 ```tsx
-import { AudioToggle } from '@allsetlabs/reusable/statefulComponents/audio/toggle';
+import { AudioToggle } from '@allsetlabs/forge/statefulComponents/audio/toggle';
 
 function Header() {
   return (
@@ -98,7 +98,7 @@ function Header() {
 ### Example 2: Using Audio Context
 
 ```tsx
-import { useAudioContext } from '@allsetlabs/reusable/statefulComponents/audio/context';
+import { useAudioContext } from '@allsetlabs/forge/statefulComponents/audio/context';
 
 function AudioIndicator() {
   const { isMuted } = useAudioContext();
@@ -114,7 +114,7 @@ function AudioIndicator() {
 ### Example 3: Programmatic Mute Control
 
 ```tsx
-import { useAudioContext } from '@allsetlabs/reusable/statefulComponents/audio/context';
+import { useAudioContext } from '@allsetlabs/forge/statefulComponents/audio/context';
 
 function Settings() {
   const { isMuted, toggleMute } = useAudioContext();
@@ -137,7 +137,7 @@ function Settings() {
 ### Example 4: Custom Toggle Button
 
 ```tsx
-import { useAudioContext } from '@allsetlabs/reusable/statefulComponents/audio/context';
+import { useAudioContext } from '@allsetlabs/forge/statefulComponents/audio/context';
 
 function CustomAudioToggle() {
   const { isMuted, toggleMute } = useAudioContext();
@@ -228,7 +228,7 @@ const { isMuted, toggleMute } = useAudioContext();
 
 ## Notes
 
-- AudioProvider is **automatically initialized in `InitializeReusableChunks`** - no manual setup required
+- AudioProvider is **automatically initialized in `InitializeForgeChunks`** - no manual setup required
 - Uses Web Audio API (AudioContext or webkitAudioContext)
 - Single document-level click listener for performance
 - playClickSound function is memoized with useCallback

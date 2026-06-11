@@ -8,7 +8,7 @@ Interactive transcription viewer with segment highlighting and time-based seekin
 import {
   Transcription,
   TranscriptionSegment,
-} from '@allsetlabs/reusable/components/ai-elements/transcription';
+} from '@allsetlabs/forge/components/ai-elements/transcription';
 ```
 
 ## Features

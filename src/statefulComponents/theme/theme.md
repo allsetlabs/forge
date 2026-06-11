@@ -5,15 +5,15 @@ Complete dark mode theme management system with provider, context hook, and segm
 ## Import
 
 ```tsx
-import { useThemeContext } from '@allsetlabs/reusable/statefulComponents/theme/context';
-import ThemeToggle from '@allsetlabs/reusable/statefulComponents/theme/toggle';
+import { useThemeContext } from '@allsetlabs/forge/statefulComponents/theme/context';
+import ThemeToggle from '@allsetlabs/forge/statefulComponents/theme/toggle';
 ```
 
 ## Provider Initialization
 
-**ThemeProvider is automatically initialized in `InitializeReusableChunks`.**
+**ThemeProvider is automatically initialized in `InitializeForgeChunks`.**
 
-You do **not** need to manually wrap your app with `ThemeProvider` - it's already included when you use `InitializeReusableChunks` at your app root.
+You do **not** need to manually wrap your app with `ThemeProvider` - it's already included when you use `InitializeForgeChunks` at your app root.
 
 ## Features
 
@@ -27,7 +27,7 @@ You do **not** need to manually wrap your app with `ThemeProvider` - it's alread
 ## Basic Usage
 
 ```tsx
-import ThemeToggle from '@allsetlabs/reusable/statefulComponents/theme/toggle';
+import ThemeToggle from '@allsetlabs/forge/statefulComponents/theme/toggle';
 
 function Header() {
   return (
@@ -88,7 +88,7 @@ Hook to access theme state and controls.
 ### Example 1: Using Toggle Button
 
 ```tsx
-import ThemeToggle from '@allsetlabs/reusable/statefulComponents/theme/toggle';
+import ThemeToggle from '@allsetlabs/forge/statefulComponents/theme/toggle';
 
 function Header() {
   return (
@@ -107,7 +107,7 @@ function Header() {
 ### Example 2: Using Theme Context
 
 ```tsx
-import { useThemeContext } from '@allsetlabs/reusable/statefulComponents/theme/context';
+import { useThemeContext } from '@allsetlabs/forge/statefulComponents/theme/context';
 
 function ThemeIndicator() {
   const { theme, resolvedTheme } = useThemeContext();
@@ -128,7 +128,7 @@ function ThemeIndicator() {
 ### Example 3: Programmatic Theme Change
 
 ```tsx
-import { useThemeContext } from '@allsetlabs/reusable/statefulComponents/theme/context';
+import { useThemeContext } from '@allsetlabs/forge/statefulComponents/theme/context';
 
 function Settings() {
   const { theme, setTheme } = useThemeContext();
@@ -151,7 +151,7 @@ function Settings() {
 ### Example 4: Theme-Aware Component
 
 ```tsx
-import { useThemeContext } from '@allsetlabs/reusable/statefulComponents/theme/context';
+import { useThemeContext } from '@allsetlabs/forge/statefulComponents/theme/context';
 
 function Logo() {
   const { resolvedTheme } = useThemeContext();
@@ -167,7 +167,7 @@ function Logo() {
 ### Example 5: Custom Segmented Theme Picker
 
 ```tsx
-import { useThemeContext, Theme } from '@allsetlabs/reusable/statefulComponents/theme/context';
+import { useThemeContext, Theme } from '@allsetlabs/forge/statefulComponents/theme/context';
 
 const options: { value: Theme; label: string }[] = [
   { value: 'light', label: 'Light' },
@@ -270,8 +270,8 @@ const { theme, resolvedTheme, setTheme } = useThemeContext();
 
 ## Notes
 
-- ThemeProvider is **automatically initialized in `InitializeReusableChunks`** - no manual setup required
-- `'dark'` class is added to the target element (typically `#reusables-app-root`)
+- ThemeProvider is **automatically initialized in `InitializeForgeChunks`** - no manual setup required
+- `'dark'` class is added to the target element (typically `#forge-app-root`)
 - Your Tailwind config should have `darkMode: 'class'`
 - Theme persists in localStorage under key `'theme'`
 - Default stored theme is `'system'`; resolves to OS preference or `'light'` if no preference

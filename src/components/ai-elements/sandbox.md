@@ -14,7 +14,7 @@ import {
   SandboxTabsList,
   SandboxTabsTrigger,
   SandboxTabContent,
-} from '@allsetlabs/reusable/components/ai-elements/sandbox';
+} from '@allsetlabs/forge/components/ai-elements/sandbox';
 ```
 
 ## Features

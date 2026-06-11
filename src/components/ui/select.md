@@ -16,7 +16,7 @@ import {
   SelectSeparator,
   SelectScrollUpButton,
   SelectScrollDownButton,
-} from '@allsetlabs/reusable/components/ui/select';
+} from '@allsetlabs/forge/components/ui/select';
 ```
 
 ## Features

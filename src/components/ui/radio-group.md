@@ -5,7 +5,7 @@ A set of mutually exclusive radio buttons for selecting a single option from mul
 ## Import
 
 ```tsx
-import { RadioGroup, RadioGroupItem } from '@allsetlabs/reusable/components/ui/radio-group';
+import { RadioGroup, RadioGroupItem } from '@allsetlabs/forge/components/ui/radio-group';
 ```
 
 ## Features

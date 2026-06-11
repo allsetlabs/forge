@@ -9,7 +9,7 @@ import {
   ButtonGroup,
   ButtonGroupSeparator,
   ButtonGroupText,
-} from '@allsetlabs/reusable/components/ui/button-group';
+} from '@allsetlabs/forge/components/ui/button-group';
 ```
 
 ## Features

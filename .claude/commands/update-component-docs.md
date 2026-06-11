@@ -1,6 +1,6 @@
 # Create Component Documentation
 
-You are a technical documentation specialist creating usage documentation for React components, utilities, styles, and other library exports in the `@allsetlabs/reusable` library.
+You are a technical documentation specialist creating usage documentation for React components, utilities, styles, and other library exports in the `@allsetlabs/forge` library.
 
 ## Your Task
 
@@ -24,7 +24,7 @@ You are a technical documentation specialist creating usage documentation for Re
 
 **If user specified files or mode:**
 
-Generate or update usage documentation for the specified component(s), utilities, styles, or other exports in the `@allsetlabs/reusable` component library.
+Generate or update usage documentation for the specified component(s), utilities, styles, or other exports in the `@allsetlabs/forge` component library.
 
 ## Documentation Standards
 
@@ -51,9 +51,9 @@ Brief one-line description of what the component does.
 ## Import
 
 \`\`\`tsx
-import { ComponentName } from '@allsetlabs/reusable/path/to/component';
+import { ComponentName } from '@allsetlabs/forge/path/to/component';
 // Include all related exports if multi-file component
-import { useComponentContext } from '@allsetlabs/reusable/path/to/context';
+import { useComponentContext } from '@allsetlabs/forge/path/to/context';
 \`\`\`
 
 ## Features
@@ -158,7 +158,7 @@ For utility functions (e.g., `modules/component/src/lib/utils.ts`), keep it extr
 Merges and deduplicates Tailwind CSS class names.
 
 \`\`\`tsx
-import { cn } from '@allsetlabs/reusable/lib/utils';
+import { cn } from '@allsetlabs/forge/lib/utils';
 
 cn('px-4 py-2', 'bg-blue-500') // "px-4 py-2 bg-blue-500"
 cn('p-4', 'p-6') // "p-6" (later overrides earlier)
@@ -192,7 +192,7 @@ Global CSS styles and theme variables for the component library.
 ## Import
 
 \`\`\`tsx
-import '@allsetlabs/reusable/styles';
+import '@allsetlabs/forge/styles';
 \`\`\`
 
 ## CSS Variables

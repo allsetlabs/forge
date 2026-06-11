@@ -15,7 +15,7 @@ import {
   PackageInfoContent,
   PackageInfoDependencies,
   PackageInfoDependency,
-} from '@allsetlabs/reusable/components/ai-elements/package-info';
+} from '@allsetlabs/forge/components/ai-elements/package-info';
 ```
 
 ## Features

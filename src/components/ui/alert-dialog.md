@@ -17,7 +17,7 @@ import {
   AlertDialogDescription,
   AlertDialogAction,
   AlertDialogCancel,
-} from '@allsetlabs/reusable/components/ui/alert-dialog';
+} from '@allsetlabs/forge/components/ui/alert-dialog';
 ```
 
 ## Features

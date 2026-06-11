@@ -13,7 +13,7 @@ import {
   type ResumeFormat,
   type Experience,
   type Education,
-} from '@allsetlabs/reusable/lib/generateResume';
+} from '@allsetlabs/forge/lib/generateResume';
 ```
 
 ## downloadResume(resumeData: ResumeData, format?: ResumeFormat): Promise<void>

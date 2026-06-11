@@ -5,7 +5,7 @@ Animated avatar component using Rive animations with state-based interactions.
 ## Import
 
 ```tsx
-import { Persona } from '@allsetlabs/reusable/components/ai-elements/persona';
+import { Persona } from '@allsetlabs/forge/components/ai-elements/persona';
 ```
 
 ## Features

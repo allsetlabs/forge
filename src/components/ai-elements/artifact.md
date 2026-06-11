@@ -14,7 +14,7 @@ import {
   ArtifactAction,
   ArtifactClose,
   ArtifactContent,
-} from '@allsetlabs/reusable/components/ai-elements/artifact';
+} from '@allsetlabs/forge/components/ai-elements/artifact';
 ```
 
 ## Features

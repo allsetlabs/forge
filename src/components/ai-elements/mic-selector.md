@@ -16,7 +16,7 @@ import {
   MicSelectorLabel,
   MicSelectorValue,
   useAudioDevices,
-} from '@allsetlabs/reusable/components/ai-elements/mic-selector';
+} from '@allsetlabs/forge/components/ai-elements/mic-selector';
 ```
 
 ## Features

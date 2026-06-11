@@ -5,7 +5,7 @@ A set of two-state toggle buttons that can be toggled on or off, either as a sin
 ## Import
 
 ```tsx
-import { ToggleGroup, ToggleGroupItem } from '@allsetlabs/reusable/components/ui/toggle-group';
+import { ToggleGroup, ToggleGroupItem } from '@allsetlabs/forge/components/ui/toggle-group';
 ```
 
 ## Features

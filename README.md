@@ -1,4 +1,4 @@
-# @allsetlabs/reusable
+# @allsetlabs/forge
 
 Material Design inspired component library for personal projects.
 

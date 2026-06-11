@@ -5,10 +5,10 @@ Global CSS styles and theme variables for the component library.
 ## Import
 
 ```tsx
-import '@allsetlabs/reusable/styles';
+import '@allsetlabs/forge/styles';
 ```
 
-**Note:** Styles are automatically imported when using `InitializeReusableChunks`. Manual import is only needed if not using the setup component.
+**Note:** Styles are automatically imported when using `InitializeForgeChunks`. Manual import is only needed if not using the setup component.
 
 ## CSS Variables
 

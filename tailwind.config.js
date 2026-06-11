@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  important: '#reusables-app-root',
+  important: '#forge-app-root',
   content: [
     './src/**/*.{js,ts,jsx,tsx}',
     './index.html',
-    './node_modules/@allsetlabs/reusable/src/**/*.{js,ts,jsx,tsx}',
+    './node_modules/@allsetlabs/forge/src/**/*.{js,ts,jsx,tsx}',
   ],
   darkMode: ['class', 'class'],
   theme: {

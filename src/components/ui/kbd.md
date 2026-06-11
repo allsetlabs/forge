@@ -5,7 +5,7 @@ A component for displaying keyboard shortcuts and hotkeys.
 ## Import
 
 ```tsx
-import { Kbd } from '@allsetlabs/reusable/components/ui/kbd';
+import { Kbd } from '@allsetlabs/forge/components/ui/kbd';
 ```
 
 ## Features

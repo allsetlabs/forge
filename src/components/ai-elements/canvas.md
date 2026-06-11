@@ -5,7 +5,7 @@ Interactive flow canvas for node-based visualizations using React Flow.
 ## Import
 
 ```tsx
-import { Canvas } from '@allsetlabs/reusable/components/ai-elements/canvas';
+import { Canvas } from '@allsetlabs/forge/components/ai-elements/canvas';
 ```
 
 ## Features
@@ -20,7 +20,7 @@ import { Canvas } from '@allsetlabs/reusable/components/ai-elements/canvas';
 ## Basic Usage
 
 ```tsx
-import { Canvas } from '@allsetlabs/reusable/components/ai-elements/canvas';
+import { Canvas } from '@allsetlabs/forge/components/ai-elements/canvas';
 import { Background } from '@xyflow/react';
 
 <Canvas nodes={nodes} edges={edges} onNodesChange={onNodesChange} onEdgesChange={onEdgesChange}>
@@ -53,7 +53,7 @@ import { Background } from '@xyflow/react';
 ### Example 1: Basic Flow
 
 ```tsx
-import { Canvas } from '@allsetlabs/reusable/components/ai-elements/canvas';
+import { Canvas } from '@allsetlabs/forge/components/ai-elements/canvas';
 import { Background } from '@xyflow/react';
 import { useState } from 'react';
 
@@ -94,7 +94,7 @@ function FlowDiagram() {
 ### Example 2: Agent Workflow Canvas
 
 ```tsx
-import { Canvas } from '@allsetlabs/reusable/components/ai-elements/canvas';
+import { Canvas } from '@allsetlabs/forge/components/ai-elements/canvas';
 import { Background, Controls, MiniMap } from '@xyflow/react';
 
 <div style={{ height: 600 }}>

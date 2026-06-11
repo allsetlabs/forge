@@ -13,7 +13,7 @@ import {
   CardContent,
   CardFooter,
   CardAction,
-} from '@allsetlabs/reusable/components/ui/card';
+} from '@allsetlabs/forge/components/ui/card';
 ```
 
 ## Features

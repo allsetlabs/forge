@@ -5,7 +5,7 @@ An input control that allows users to select a value from a range by dragging a 
 ## Import
 
 ```tsx
-import { Slider } from '@allsetlabs/reusable/components/ui/slider';
+import { Slider } from '@allsetlabs/forge/components/ui/slider';
 ```
 
 ## Features

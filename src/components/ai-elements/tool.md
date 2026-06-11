@@ -11,7 +11,7 @@ import {
   ToolContent,
   ToolInput,
   ToolOutput,
-} from '@allsetlabs/reusable/components/ai-elements/tool';
+} from '@allsetlabs/forge/components/ai-elements/tool';
 ```
 
 ## Features

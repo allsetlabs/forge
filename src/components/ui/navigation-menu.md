@@ -15,7 +15,7 @@ import {
   NavigationMenuLink,
   NavigationMenuIndicator,
   NavigationMenuViewport,
-} from '@allsetlabs/reusable/components/ui/navigation-menu';
+} from '@allsetlabs/forge/components/ui/navigation-menu';
 ```
 
 ## Features

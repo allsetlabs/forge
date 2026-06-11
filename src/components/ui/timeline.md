@@ -12,7 +12,7 @@ import Timeline, {
   TimelineItemDescription,
   type TimelineProps,
   type TimelineItemProps,
-} from '@allsetlabs/reusable/components/ui/timeline';
+} from '@allsetlabs/forge/components/ui/timeline';
 ```
 
 ## Features

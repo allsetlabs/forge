@@ -54,11 +54,11 @@ export function CursorProvider({ children, targetElement }: CursorProviderProps)
     localStorage.setItem('customCursorEnabled', String(newValue));
   };
 
-  // Inject CSS rule scoped to #reusables-app-root
+  // Inject CSS rule scoped to #forge-app-root
   useEffect(() => {
     const style = document.createElement('style');
     style.id = 'custom-cursor-style';
-    style.textContent = '#reusables-app-root.custom-cursor-enabled * { cursor: none !important; }';
+    style.textContent = '#forge-app-root.custom-cursor-enabled * { cursor: none !important; }';
 
     // Find the style parent (could be in Shadow DOM or document head)
     const styleParent =
@@ -76,7 +76,7 @@ export function CursorProvider({ children, targetElement }: CursorProviderProps)
     };
   }, [targetElement]);
 
-  // Toggle class based on cursor state - scoped to #reusables-app-root
+  // Toggle class based on cursor state - scoped to #forge-app-root
   useEffect(() => {
     if (!targetElement) return;
 
@@ -91,7 +91,7 @@ export function CursorProvider({ children, targetElement }: CursorProviderProps)
     };
   }, [isEnabled, canUseCursor, targetElement]);
 
-  // Custom cursor tracking logic - scoped to #reusables-app-root
+  // Custom cursor tracking logic - scoped to #forge-app-root
   useEffect(() => {
     if (!isEnabled || !canUseCursor) return;
     if (!targetElement) return;

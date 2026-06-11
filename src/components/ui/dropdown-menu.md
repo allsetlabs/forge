@@ -21,7 +21,7 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuRadioGroup,
-} from '@allsetlabs/reusable/components/ui/dropdown-menu';
+} from '@allsetlabs/forge/components/ui/dropdown-menu';
 ```
 
 ## Features

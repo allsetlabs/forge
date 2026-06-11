@@ -12,7 +12,7 @@ import {
   WebPreviewUrl,
   WebPreviewBody,
   WebPreviewConsole,
-} from '@allsetlabs/reusable/components/ai-elements/web-preview';
+} from '@allsetlabs/forge/components/ai-elements/web-preview';
 ```
 
 ## Features

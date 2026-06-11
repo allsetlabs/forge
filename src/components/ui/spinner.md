@@ -5,7 +5,7 @@ A loading indicator with animated rotation.
 ## Import
 
 ```tsx
-import { Spinner, spinnerVariants } from '@allsetlabs/reusable/components/ui/spinner';
+import { Spinner, spinnerVariants } from '@allsetlabs/forge/components/ui/spinner';
 ```
 
 ## Features

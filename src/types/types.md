@@ -13,14 +13,14 @@ import type {
   AuthState,
   AuthProviderConfig,
   IAuthService,
-} from '@allsetlabs/reusable/types';
+} from '@allsetlabs/forge/types';
 
 // Additional types available from auth.ts directly
 import type {
   EmailLoginRequest,
   EmailSignupRequest,
   AuthMethod,
-} from '@allsetlabs/reusable/types/auth';
+} from '@allsetlabs/forge/types/auth';
 ```
 
 ## Auth Types
@@ -188,5 +188,5 @@ type AuthMethod = 'google' | 'email';
 - All auth types support extensibility via index signatures (`[key: string]: unknown`)
 - Use these types as base interfaces and extend them for provider-specific fields
 - Import types using `import type { ... }` for better tree-shaking
-- Main types are exported from `@allsetlabs/reusable/types` (index.ts)
-- Additional types like `EmailLoginRequest`, `EmailSignupRequest`, and `AuthMethod` are available from `@allsetlabs/reusable/types/auth`
+- Main types are exported from `@allsetlabs/forge/types` (index.ts)
+- Additional types like `EmailLoginRequest`, `EmailSignupRequest`, and `AuthMethod` are available from `@allsetlabs/forge/types/auth`

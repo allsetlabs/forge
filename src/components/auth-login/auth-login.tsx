@@ -7,7 +7,7 @@
  *
  * @example
  * ```tsx
- * import { AuthLogin } from '@allsetlabs/reusable/components/auth-login';
+ * import { AuthLogin } from '@allsetlabs/forge/components/auth-login';
  *
  * function LoginPage() {
  *   const handleSuccess = async (credential: string) => {

@@ -7,7 +7,7 @@
  *
  * @example
  * ```tsx
- * import { AuthLogin } from '@allsetlabs/reusable/components/auth-login';
+ * import { AuthLogin } from '@allsetlabs/forge/components/auth-login';
  *
  * <AuthLogin
  *   onSuccessLogin={(credential) => handleLogin(credential)}

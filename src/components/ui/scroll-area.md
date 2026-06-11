@@ -5,7 +5,7 @@ A custom scrollable area component built on Radix UI with styled scrollbars for 
 ## Import
 
 ```tsx
-import { ScrollArea, ScrollBar } from '@allsetlabs/reusable/components/ui/scroll-area';
+import { ScrollArea, ScrollBar } from '@allsetlabs/forge/components/ui/scroll-area';
 ```
 
 ## Features

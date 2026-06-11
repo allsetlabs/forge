@@ -9,7 +9,7 @@ import {
   Collapsible,
   CollapsibleTrigger,
   CollapsibleContent,
-} from '@allsetlabs/reusable/components/ui/collapsible';
+} from '@allsetlabs/forge/components/ui/collapsible';
 ```
 
 ## Features
@@ -26,8 +26,8 @@ import {
   Collapsible,
   CollapsibleTrigger,
   CollapsibleContent,
-} from '@allsetlabs/reusable/components/ui/collapsible';
-import { Button } from '@allsetlabs/reusable/components/ui/button';
+} from '@allsetlabs/forge/components/ui/collapsible';
+import { Button } from '@allsetlabs/forge/components/ui/button';
 
 function Example() {
   return (

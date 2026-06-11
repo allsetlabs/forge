@@ -5,7 +5,7 @@ Smart wrapper component that handles loading, error, and empty states for data f
 ## Import
 
 ```tsx
-import { DataFetchWrapper } from '@allsetlabs/reusable/components/DataFetchWrapper';
+import { DataFetchWrapper } from '@allsetlabs/forge/components/DataFetchWrapper';
 ```
 
 ## Features

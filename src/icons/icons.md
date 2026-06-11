@@ -24,7 +24,7 @@ import {
   IconInbox,
   IconLoading,
   IconSpinner,
-} from '@allsetlabs/reusable/icons';
+} from '@allsetlabs/forge/icons';
 ```
 
 ## Features
@@ -60,7 +60,7 @@ All icon components accept:
 ### Navigation Icons
 
 ```tsx
-import { IconArrowRight, IconArrowLeft, IconHome } from '@allsetlabs/reusable/icons';
+import { IconArrowRight, IconArrowLeft, IconHome } from '@allsetlabs/forge/icons';
 
 <IconArrowRight className="h-5 w-5" />
 <IconArrowLeft className="h-5 w-5" />
@@ -78,7 +78,7 @@ import { IconArrowRight, IconArrowLeft, IconHome } from '@allsetlabs/reusable/ic
 ### Contact Icons
 
 ```tsx
-import { IconEmail, IconPhone, IconLocation } from '@allsetlabs/reusable/icons';
+import { IconEmail, IconPhone, IconLocation } from '@allsetlabs/forge/icons';
 
 <IconEmail className="h-5 w-5" />
 <IconPhone className="h-5 w-5" />
@@ -96,7 +96,7 @@ import { IconEmail, IconPhone, IconLocation } from '@allsetlabs/reusable/icons';
 ### Social Icons
 
 ```tsx
-import { IconLinkedIn, IconGitHub } from '@allsetlabs/reusable/icons';
+import { IconLinkedIn, IconGitHub } from '@allsetlabs/forge/icons';
 
 <IconLinkedIn className="h-6 w-6 text-blue-600" />
 <IconGitHub className="h-6 w-6 text-gray-900 dark:text-white" />
@@ -116,7 +116,7 @@ import {
   IconAlertCircle,
   IconAlertTriangle,
   IconClose
-} from '@allsetlabs/reusable/icons';
+} from '@allsetlabs/forge/icons';
 
 <IconCheckCircle className="h-5 w-5 text-green-500" />
 <IconAlertCircle className="h-5 w-5 text-yellow-500" />
@@ -137,7 +137,7 @@ import {
 ### Action Icons
 
 ```tsx
-import { IconFolder, IconBriefcase, IconInbox } from '@allsetlabs/reusable/icons';
+import { IconFolder, IconBriefcase, IconInbox } from '@allsetlabs/forge/icons';
 
 <IconFolder className="h-5 w-5" />
 <IconBriefcase className="h-5 w-5" />
@@ -155,7 +155,7 @@ import { IconFolder, IconBriefcase, IconInbox } from '@allsetlabs/reusable/icons
 ### Loading Icons
 
 ```tsx
-import { IconLoading, IconSpinner } from '@allsetlabs/reusable/icons';
+import { IconLoading, IconSpinner } from '@allsetlabs/forge/icons';
 
 <IconLoading className="h-8 w-8 text-primary animate-spin" />
 <IconSpinner className="h-8 w-8 text-primary animate-spin" />

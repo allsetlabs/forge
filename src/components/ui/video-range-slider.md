@@ -19,7 +19,7 @@ import {
   VideoRangeSlider,
   formatTimeToMSS,
   parseMSSToSeconds,
-} from '@allsetlabs/reusable/components/ui/video-range-slider';
+} from '@allsetlabs/forge/components/ui/video-range-slider';
 ```
 
 ## Usage

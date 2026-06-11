@@ -5,7 +5,7 @@ Styled multi-line text input component with consistent appearance and full HTML 
 ## Import
 
 ```tsx
-import { Textarea } from '@allsetlabs/reusable/components/ui/textarea';
+import { Textarea } from '@allsetlabs/forge/components/ui/textarea';
 ```
 
 ## Features

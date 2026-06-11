@@ -16,7 +16,7 @@ import {
   SheetDescription,
   SheetPortal,
   SheetOverlay,
-} from '@allsetlabs/reusable/components/ui/sheet';
+} from '@allsetlabs/forge/components/ui/sheet';
 ```
 
 ## Features

@@ -1,4 +1,4 @@
-# Component Library (@allsetlabs/reusable)
+# Component Library (@allsetlabs/forge)
 
 ## Purpose
 
@@ -6,7 +6,7 @@ Shared React component library used by all frontend modules in this monorepo —
 
 ## Mental Model
 
-Built with React, TypeScript, Tailwind CSS, and shadcn/ui patterns. This is a library package — not a standalone application. No build step required; consumers import directly from source. Other modules install it as `"@allsetlabs/reusable": "file:../forge"` (or `file:../../forge` for nested paths) and import via TypeScript path aliases.
+Built with React, TypeScript, Tailwind CSS, and shadcn/ui patterns. This is a library package — not a standalone application. No build step required; consumers import directly from source. Other modules install it as `"@allsetlabs/forge": "file:../forge"` (or `file:../../forge` for nested paths) and import via TypeScript path aliases.
 
 ## Where Things Go
 
@@ -22,7 +22,7 @@ src/
 ├── lib/                     # Utilities (cn(), resume generator, etc.)
 ├── styles/                  # Global styles, CSS variables, theme system
 ├── types/                   # TypeScript type definitions
-└── InitializeReusableChunks.tsx  # Required root wrapper — sets up providers and styles
+└── InitializeForgeChunks.tsx  # Required root wrapper — sets up providers and styles
 ```
 
 Stack: React + TypeScript + Tailwind CSS v3 + shadcn/ui + Radix UI + CVA.
@@ -45,27 +45,27 @@ Run `npm run type-check` after code changes. For visual component changes, start
 
 ## Consuming Module Setup
 
-**Install:** add `"@allsetlabs/reusable": "file:../forge"` to `package.json`
+**Install:** add `"@allsetlabs/forge": "file:../forge"` to `package.json`
 
 **TypeScript paths** — add to `tsconfig.json`:
 ```json
-{ "paths": { "@allsetlabs/reusable/*": ["./node_modules/@allsetlabs/reusable/src/*"] } }
+{ "paths": { "@allsetlabs/forge/*": ["./node_modules/@allsetlabs/forge/src/*"] } }
 ```
 
 **Tailwind config** — extend the library's base config:
 ```js
-import baseConfig from '@allsetlabs/reusable/tailwind.config';
+import baseConfig from '@allsetlabs/forge/tailwind.config';
 export default { ...baseConfig };
 ```
 
-**Root wrapper** — wrap app with `InitializeReusableChunks` (imports styles, initializes providers):
+**Root wrapper** — wrap app with `InitializeForgeChunks` (imports styles, initializes providers):
 ```tsx
-import { InitializeReusableChunks } from '@allsetlabs/reusable/InitializeReusableChunks';
+import { InitializeForgeChunks } from '@allsetlabs/forge/InitializeForgeChunks';
 ```
 
 **Import components:**
 ```tsx
-import { Button } from '@allsetlabs/reusable/components/ui/button';
+import { Button } from '@allsetlabs/forge/components/ui/button';
 ```
 
 ## Adding New Components

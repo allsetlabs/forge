@@ -5,7 +5,7 @@ A positioned panel component for React Flow / XYFlow interfaces.
 ## Import
 
 ```tsx
-import { Panel } from '@allsetlabs/reusable/components/ai-elements/panel';
+import { Panel } from '@allsetlabs/forge/components/ai-elements/panel';
 ```
 
 ## Features

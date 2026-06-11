@@ -5,7 +5,7 @@ Animated flip-style clock with real-time display or countdown functionality, fea
 ## Import
 
 ```tsx
-import FlipClock from '@allsetlabs/reusable/components/ui/flip-clock';
+import FlipClock from '@allsetlabs/forge/components/ui/flip-clock';
 ```
 
 ## Features

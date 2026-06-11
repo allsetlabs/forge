@@ -15,7 +15,7 @@ import {
   FormMessage,
   useForm,
   useFormField,
-} from '@allsetlabs/reusable/components/ui/form';
+} from '@allsetlabs/forge/components/ui/form';
 ```
 
 ## Features
@@ -29,8 +29,8 @@ import {
 ## Basic Usage
 
 ```tsx
-import { useForm } from '@allsetlabs/reusable/components/ui/form';
-import { Input } from '@allsetlabs/reusable/components/ui/input';
+import { useForm } from '@allsetlabs/forge/components/ui/form';
+import { Input } from '@allsetlabs/forge/components/ui/input';
 
 const form = useForm({
   defaultValues: {

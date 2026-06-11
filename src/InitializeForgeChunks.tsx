@@ -12,7 +12,7 @@ import type { AuthTokenResponse } from './types/auth';
 import './styles/index.css';
 
 /**
- * Authentication configuration for InitializeReusableChunks.
+ * Authentication configuration for InitializeForgeChunks.
  * If provided with onSuccess, enables authentication guard that shows login before app content.
  * If provided without onSuccess, sets up AuthProvider and GoogleOAuthProvider without guard.
  */
@@ -37,10 +37,10 @@ export interface AuthConfig {
   enableExtensionBridge?: boolean;
 }
 
-interface InitializeReusableChunksProps {
+interface InitializeForgeChunksProps {
   children: ReactNode;
   /**
-   * If true, applies ID "reusables-app-root" to body element for full-page styling.
+   * If true, applies ID "forge-app-root" to body element for full-page styling.
    * If false/undefined, applies ID to container div for scoped styling (Shadow DOM).
    * @default false
    */
@@ -60,7 +60,7 @@ interface InitializeReusableChunksProps {
 }
 
 /**
- * InitializeReusableChunks - Unified provider for all component library contexts
+ * InitializeForgeChunks - Unified provider for all component library contexts
  *
  * Wraps the application with all necessary context providers:
  * - ThemeProvider: Dark/light theme management
@@ -73,19 +73,19 @@ interface InitializeReusableChunksProps {
  * - If `auth` prop is NOT provided: Renders children directly (no authentication required)
  * - If `auth` prop IS provided: Shows AuthLogin when not authenticated, children when authenticated
  *
- * Applies ID "reusables-app-root" based on applyToBody prop:
+ * Applies ID "forge-app-root" based on applyToBody prop:
  * - applyToBody={true}: Applies ID to body element (regular web app with full-page styling)
  * - applyToBody={false}: Applies ID to container div (Shadow DOM/Chrome extension with scoped styling)
  *
  * @example
  * ```tsx
  * // WITHOUT authentication (portfolio, public pages)
- * <InitializeReusableChunks applyToBody>
+ * <InitializeForgeChunks applyToBody>
  *   <PublicApp />
- * </InitializeReusableChunks>
+ * </InitializeForgeChunks>
  *
  * // WITH authentication (Seekr web app)
- * <InitializeReusableChunks
+ * <InitializeForgeChunks
  *   applyToBody
  *   auth={{
  *     googleClientId: import.meta.env.VITE_GOOGLE_CLIENT_ID,
@@ -95,15 +95,15 @@ interface InitializeReusableChunksProps {
  *   }}
  * >
  *   <AuthenticatedApp />
- * </InitializeReusableChunks>
+ * </InitializeForgeChunks>
  * ```
  */
-export function InitializeReusableChunks({
+export function InitializeForgeChunks({
   children,
   applyToBody = false,
   auth,
   defaultMuted = false,
-}: InitializeReusableChunksProps) {
+}: InitializeForgeChunksProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [targetElement, setTargetElement] = useState<HTMLElement | null>(null);
 
@@ -111,7 +111,7 @@ export function InitializeReusableChunks({
   useEffect(() => {
     if (applyToBody) {
       // Apply ID to body element
-      document.body.setAttribute('id', 'reusables-app-root');
+      document.body.setAttribute('id', 'forge-app-root');
       // eslint-disable-next-line react-hooks/set-state-in-effect
       setTargetElement(document.body);
     } else {
@@ -121,7 +121,7 @@ export function InitializeReusableChunks({
 
     return () => {
       // Cleanup: remove ID from body if it was added
-      if (applyToBody && document.body.id === 'reusables-app-root') {
+      if (applyToBody && document.body.id === 'forge-app-root') {
         document.body.removeAttribute('id');
       }
     };
@@ -131,7 +131,7 @@ export function InitializeReusableChunks({
     <div
       style={{ height: '100%', width: '100%' }}
       ref={containerRef}
-      {...(applyToBody ? {} : { id: 'reusables-app-root' })}
+      {...(applyToBody ? {} : { id: 'forge-app-root' })}
     >
       <ThemeProvider targetElement={targetElement}>
         <AudioProvider defaultMuted={defaultMuted}>

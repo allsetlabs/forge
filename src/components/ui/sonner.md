@@ -5,7 +5,7 @@ A toast notification component built on Sonner library with theme-aware styling 
 ## Import
 
 ```tsx
-import { Toaster } from '@allsetlabs/reusable/components/ui/sonner';
+import { Toaster } from '@allsetlabs/forge/components/ui/sonner';
 ```
 
 ## Features
@@ -22,7 +22,7 @@ import { Toaster } from '@allsetlabs/reusable/components/ui/sonner';
 
 ```tsx
 // 1. Add Toaster to your app root (once)
-import { Toaster } from '@allsetlabs/reusable/components/ui/sonner';
+import { Toaster } from '@allsetlabs/forge/components/ui/sonner';
 
 function App() {
   return (

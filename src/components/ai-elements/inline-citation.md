@@ -20,7 +20,7 @@ import {
   InlineCitationCarouselNext,
   InlineCitationSource,
   InlineCitationQuote,
-} from '@allsetlabs/reusable/components/ai-elements/inline-citation';
+} from '@allsetlabs/forge/components/ai-elements/inline-citation';
 ```
 
 ## Features

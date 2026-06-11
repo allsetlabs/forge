@@ -13,7 +13,7 @@ import {
   AgentTools,
   AgentTool,
   AgentOutput,
-} from '@allsetlabs/reusable/components/ai-elements/agent';
+} from '@allsetlabs/forge/components/ai-elements/agent';
 ```
 
 ## Features
@@ -92,7 +92,7 @@ import {
   AgentInstructions,
   AgentTools,
   AgentTool,
-} from '@allsetlabs/reusable/components/ai-elements/agent';
+} from '@allsetlabs/forge/components/ai-elements/agent';
 
 const tools = [
   {

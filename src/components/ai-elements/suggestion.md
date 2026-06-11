@@ -5,7 +5,7 @@ Horizontal scrollable list of suggestion chips/buttons for quick actions.
 ## Import
 
 ```tsx
-import { Suggestions, Suggestion } from '@allsetlabs/reusable/components/ai-elements/suggestion';
+import { Suggestions, Suggestion } from '@allsetlabs/forge/components/ai-elements/suggestion';
 ```
 
 ## Features

@@ -1,6 +1,6 @@
-# @allsetlabs/reusable Component Library
+# @allsetlabs/forge Component Library
 
-Complete documentation for the reusable component library built with React, TypeScript, and Tailwind CSS.
+Complete documentation for the forge component library built with React, TypeScript, and Tailwind CSS.
 
 ## Installation
 
@@ -20,13 +20,13 @@ Add path mapping to your `tsconfig.json`:
 {
   "compilerOptions": {
     "paths": {
-      "@allsetlabs/reusable/*": ["./node_modules/@allsetlabs/reusable/src/*"]
+      "@allsetlabs/forge/*": ["./node_modules/@allsetlabs/forge/src/*"]
     }
   }
 }
 ```
 
-This enables clean imports like `import { Button } from '@allsetlabs/reusable/components/ui/button'`.
+This enables clean imports like `import { Button } from '@allsetlabs/forge/components/ui/button'`.
 
 ### 2. Configure Tailwind
 
@@ -34,7 +34,7 @@ Use the library's tailwind configuration as your base config:
 
 ```js
 // tailwind.config.js
-import baseConfig from '@allsetlabs/reusable/tailwind.config';
+import baseConfig from '@allsetlabs/forge/tailwind.config';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -43,25 +43,25 @@ export default {
 };
 ```
 
-### 3. Initialize Reusable Chunks (Required)
+### 3. Initialize Forge Chunks (Required)
 
-Wrap your root app component with `InitializeReusableChunks` to set up the library:
+Wrap your root app component with `InitializeForgeChunks` to set up the library:
 
 ```tsx
-import { InitializeReusableChunks } from '@allsetlabs/reusable/InitializeReusableChunks';
+import { InitializeForgeChunks } from '@allsetlabs/forge/InitializeForgeChunks';
 
 function App() {
   return (
-    <InitializeReusableChunks>
+    <InitializeForgeChunks>
       <YourApp />
-    </InitializeReusableChunks>
+    </InitializeForgeChunks>
   );
 }
 ```
 
-**Important:** `InitializeReusableChunks` automatically:
+**Important:** `InitializeForgeChunks` automatically:
 
-- Imports all necessary styles (`@allsetlabs/reusable/styles`)
+- Imports all necessary styles (`@allsetlabs/forge/styles`)
 - Initializes **Providers** for statefulComponents
 
 You **do not** need to manually wrap your app with these providers - they are already included!
@@ -70,11 +70,11 @@ You **do not** need to manually wrap your app with these providers - they are al
 
 ### Setup & Configuration
 
-- **[InitializeReusableChunks](./src/InitializeReusableChunks.md)** - Required wrapper component that sets up all providers and styles
+- **[InitializeForgeChunks](./src/InitializeForgeChunks.md)** - Required wrapper component that sets up all providers and styles
 
 ### UI Components
 
-Located in `@allsetlabs/reusable/components/ui/`
+Located in `@allsetlabs/forge/components/ui/`
 
 - **[Accordion](./src/components/ui/accordion.md)** - Collapsible content sections with animated expand/collapse
 - **[Alert](./src/components/ui/alert.md)** - Callout component for important messages with variant styles
@@ -129,7 +129,7 @@ Located in `@allsetlabs/reusable/components/ui/`
 
 ### AI Element Components
 
-Located in `@allsetlabs/reusable/components/ai-elements/` - Components from the [@ai-elements registry](https://elements.ai-sdk.dev) for building AI-powered interfaces.
+Located in `@allsetlabs/forge/components/ai-elements/` - Components from the [@ai-elements registry](https://elements.ai-sdk.dev) for building AI-powered interfaces.
 
 - **[Agent](./src/components/ai-elements/agent.md)** - AI agent display component
 - **[Artifact](./src/components/ai-elements/artifact.md)** - AI-generated artifact viewer
@@ -182,7 +182,7 @@ Located in `@allsetlabs/reusable/components/ai-elements/` - Components from the 
 
 ### Stateful Components
 
-Located in `@allsetlabs/reusable/statefulComponents/`
+Located in `@allsetlabs/forge/statefulComponents/`
 
 - **[Auth](./src/statefulComponents/auth/auth.md)** - Authentication state management with user/token persistence and login/logout methods
 - **[Audio](./src/statefulComponents/audio/audio.md)** - Global audio feedback system with click sounds and mute control
@@ -192,7 +192,7 @@ Located in `@allsetlabs/reusable/statefulComponents/`
 
 ### Auth Components
 
-Located in `@allsetlabs/reusable/components/auth-*/` - Work with the **Auth** stateful component for complete authentication flows.
+Located in `@allsetlabs/forge/components/auth-*/` - Work with the **Auth** stateful component for complete authentication flows.
 
 - **[AuthLogin](./src/components/auth-login/auth-login.md)** - OAuth login component with support for Google and extensible architecture for other providers
 
@@ -228,7 +228,7 @@ Located in `@allsetlabs/reusable/components/auth-*/` - Work with the **Auth** st
 All components are fully typed with TypeScript. Import types directly:
 
 ```tsx
-import type { ButtonProps } from '@allsetlabs/reusable/components/ui/button';
+import type { ButtonProps } from '@allsetlabs/forge/components/ui/button';
 ```
 
 ## Styling

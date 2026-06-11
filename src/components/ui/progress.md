@@ -5,7 +5,7 @@ A visual indicator showing the completion progress of a task.
 ## Import
 
 ```tsx
-import { Progress } from '@allsetlabs/reusable/components/ui/progress';
+import { Progress } from '@allsetlabs/forge/components/ui/progress';
 ```
 
 ## Features

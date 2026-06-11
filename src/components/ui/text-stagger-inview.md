@@ -9,7 +9,7 @@ import {
   TextStaggerInview,
   WordStagger,
   type TextStaggerInviewProps,
-} from '@allsetlabs/reusable/components/ui/text-stagger-inview';
+} from '@allsetlabs/forge/components/ui/text-stagger-inview';
 ```
 
 ## Features

@@ -23,7 +23,7 @@ import {
   TestError,
   TestErrorMessage,
   TestErrorStack,
-} from '@allsetlabs/reusable/components/ai-elements/test-results';
+} from '@allsetlabs/forge/components/ai-elements/test-results';
 ```
 
 ## Features

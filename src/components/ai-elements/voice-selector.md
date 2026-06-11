@@ -21,7 +21,7 @@ import {
   VoiceSelectorAttributes,
   VoiceSelectorBullet,
   VoiceSelectorPreview,
-} from '@allsetlabs/reusable/components/ai-elements/voice-selector';
+} from '@allsetlabs/forge/components/ai-elements/voice-selector';
 ```
 
 ## Features

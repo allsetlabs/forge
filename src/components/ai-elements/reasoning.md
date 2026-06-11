@@ -9,7 +9,7 @@ import {
   Reasoning,
   ReasoningTrigger,
   ReasoningContent,
-} from '@allsetlabs/reusable/components/ai-elements/reasoning';
+} from '@allsetlabs/forge/components/ai-elements/reasoning';
 ```
 
 ## Features

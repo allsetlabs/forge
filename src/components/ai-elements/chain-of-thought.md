@@ -13,7 +13,7 @@ import {
   ChainOfThoughtSearchResults,
   ChainOfThoughtSearchResult,
   ChainOfThoughtImage,
-} from '@allsetlabs/reusable/components/ai-elements/chain-of-thought';
+} from '@allsetlabs/forge/components/ai-elements/chain-of-thought';
 ```
 
 ## Features

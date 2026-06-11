@@ -28,7 +28,7 @@ import {
   CommitFileChanges,
   CommitFileAdditions,
   CommitFileDeletions,
-} from '@allsetlabs/reusable/components/ai-elements/commit';
+} from '@allsetlabs/forge/components/ai-elements/commit';
 ```
 
 ## Features

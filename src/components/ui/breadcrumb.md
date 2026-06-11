@@ -13,7 +13,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
   BreadcrumbEllipsis,
-} from '@allsetlabs/reusable/components/ui/breadcrumb';
+} from '@allsetlabs/forge/components/ui/breadcrumb';
 ```
 
 ## Features

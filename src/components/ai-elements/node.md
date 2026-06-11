@@ -13,7 +13,7 @@ import {
   NodeAction,
   NodeContent,
   NodeFooter,
-} from '@allsetlabs/reusable/components/ai-elements/node';
+} from '@allsetlabs/forge/components/ai-elements/node';
 ```
 
 ## Features
