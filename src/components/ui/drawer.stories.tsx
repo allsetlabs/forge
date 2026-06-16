@@ -36,7 +36,7 @@ export const Default: Story = {
             <DrawerDescription>This is a drawer description.</DrawerDescription>
           </DrawerHeader>
           <div className="px-4 py-6">
-            <p className="text-sm text-muted-foreground">
+            <p className="text-muted-foreground text-sm">
               Drawer content goes here. You can add any content you want.
             </p>
           </div>

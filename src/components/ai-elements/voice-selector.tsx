@@ -198,7 +198,7 @@ export const VoiceSelectorGender = ({
   }
 
   return (
-    <span className={cn('text-xs text-muted-foreground', className)} {...props}>
+    <span className={cn('text-muted-foreground text-xs', className)} {...props}>
       {children ?? icon}
     </span>
   );
@@ -374,7 +374,7 @@ export const VoiceSelectorAccent = ({
   }
 
   return (
-    <span className={cn('text-xs text-muted-foreground', className)} {...props}>
+    <span className={cn('text-muted-foreground text-xs', className)} {...props}>
       {children ?? emoji}
     </span>
   );
@@ -383,7 +383,7 @@ export const VoiceSelectorAccent = ({
 export type VoiceSelectorAgeProps = ComponentProps<'span'>;
 
 export const VoiceSelectorAge = ({ className, ...props }: VoiceSelectorAgeProps) => (
-  <span className={cn('text-xs tabular-nums text-muted-foreground', className)} {...props} />
+  <span className={cn('text-muted-foreground text-xs tabular-nums', className)} {...props} />
 );
 
 export type VoiceSelectorNameProps = ComponentProps<'span'>;
@@ -398,7 +398,7 @@ export const VoiceSelectorDescription = ({
   className,
   ...props
 }: VoiceSelectorDescriptionProps) => (
-  <span className={cn('text-xs text-muted-foreground', className)} {...props} />
+  <span className={cn('text-muted-foreground text-xs', className)} {...props} />
 );
 
 export type VoiceSelectorAttributesProps = ComponentProps<'div'>;
@@ -416,7 +416,7 @@ export const VoiceSelectorAttributes = ({
 export type VoiceSelectorBulletProps = ComponentProps<'span'>;
 
 export const VoiceSelectorBullet = ({ className, ...props }: VoiceSelectorBulletProps) => (
-  <span aria-hidden="true" className={cn('select-none text-border', className)} {...props}>
+  <span aria-hidden="true" className={cn('text-border select-none', className)} {...props}>
     &bull;
   </span>
 );

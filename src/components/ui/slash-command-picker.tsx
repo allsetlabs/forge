@@ -126,7 +126,7 @@ export const SlashCommandPicker = React.forwardRef<
   return (
     <div
       className={cn(
-        'absolute bottom-full left-0 z-50 mb-1 w-full overflow-hidden rounded-md border border-border bg-popover shadow-md',
+        'border-border bg-popover absolute bottom-full left-0 z-50 mb-1 w-full overflow-hidden rounded-md border shadow-md',
         className
       )}
     >
@@ -138,7 +138,7 @@ export const SlashCommandPicker = React.forwardRef<
               return (
                 <div
                   key={`h-${row.heading}`}
-                  className="absolute left-0 flex w-full items-center px-2 text-xs font-medium text-muted-foreground"
+                  className="text-muted-foreground absolute left-0 flex w-full items-center px-2 text-xs font-medium"
                   style={{
                     height: HEADING_HEIGHT,
                     transform: `translateY(${virtualItem.start}px)`,
@@ -171,7 +171,7 @@ export const SlashCommandPicker = React.forwardRef<
                 }}
               >
                 <span className="flex-shrink-0 font-medium">/{item.name}</span>
-                <span className="min-w-0 truncate text-xs text-muted-foreground">
+                <span className="text-muted-foreground min-w-0 truncate text-xs">
                   {item.description}
                 </span>
               </button>

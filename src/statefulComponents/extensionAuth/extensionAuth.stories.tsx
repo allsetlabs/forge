@@ -27,7 +27,7 @@ function ExtensionAuthDemo() {
   return (
     <ExtensionAuthContext.Provider value={value}>
       <div className="flex flex-col items-start gap-4 p-4">
-        <p className="text-sm text-muted-foreground">
+        <p className="text-muted-foreground text-sm">
           Extension Auth: <strong>{value.isAuthenticated ? 'Connected' : 'Not connected'}</strong>
         </p>
         {value.user && (
@@ -38,7 +38,7 @@ function ExtensionAuthDemo() {
         )}
         {value.isAuthenticated ? (
           <button
-            className="rounded bg-destructive px-3 py-1.5 text-sm text-destructive-foreground"
+            className="bg-destructive text-destructive-foreground rounded px-3 py-1.5 text-sm"
             onClick={() => {
               setToken(null);
               setUser(null);
@@ -48,7 +48,7 @@ function ExtensionAuthDemo() {
           </button>
         ) : (
           <button
-            className="rounded bg-primary px-3 py-1.5 text-sm text-primary-foreground"
+            className="bg-primary text-primary-foreground rounded px-3 py-1.5 text-sm"
             onClick={() => value.refreshAuth()}
           >
             Simulate Auth Sync

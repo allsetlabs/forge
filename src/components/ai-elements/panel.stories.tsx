@@ -16,12 +16,12 @@ export const Default: Story = {
     <div className="h-96 w-full">
       <Canvas>
         <Panel position="top-left">
-          <div className="rounded-md border bg-background p-2">
+          <div className="bg-background rounded-md border p-2">
             <p className="text-sm">Top Left Panel</p>
           </div>
         </Panel>
         <Panel position="top-right">
-          <div className="rounded-md border bg-background p-2">
+          <div className="bg-background rounded-md border p-2">
             <p className="text-sm">Top Right Panel</p>
           </div>
         </Panel>

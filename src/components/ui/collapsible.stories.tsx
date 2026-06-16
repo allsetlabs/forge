@@ -20,7 +20,7 @@ export const Default: Story = {
         <div className="flex items-center justify-between space-x-4 px-4">
           <h4 className="text-sm font-semibold">@peduarte starred 3 repositories</h4>
           <CollapsibleTrigger asChild>
-            <button className="inline-flex h-9 w-9 items-center justify-center rounded-md text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground">
+            <button className="hover:bg-accent hover:text-accent-foreground inline-flex h-9 w-9 items-center justify-center rounded-md text-sm font-medium transition-colors">
               <svg
                 width="15"
                 height="15"

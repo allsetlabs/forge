@@ -95,7 +95,7 @@ const FlipUnit: FC<FlipUnitProps> = memo(function FlipUnit({
       </div>
 
       {/* Center Divider Shadow */}
-      <div className="absolute left-0 top-1/2 z-30 h-px w-full -translate-y-1/2 bg-background/50" />
+      <div className="bg-background/50 absolute left-0 top-1/2 z-30 h-px w-full -translate-y-1/2" />
     </div>
   );
 });

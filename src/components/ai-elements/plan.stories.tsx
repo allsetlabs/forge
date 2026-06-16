@@ -39,7 +39,7 @@ export const Streaming: Story = {
         <PlanDescription>AI is creating your plan</PlanDescription>
       </PlanHeader>
       <PlanContent>
-        <p className="text-sm text-muted-foreground">Planning in progress...</p>
+        <p className="text-muted-foreground text-sm">Planning in progress...</p>
       </PlanContent>
     </Plan>
   ),

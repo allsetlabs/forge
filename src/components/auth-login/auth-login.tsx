@@ -151,10 +151,10 @@ export function AuthLogin({
   // Future: Add GitHub, Microsoft providers
   if (provider !== 'google') {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-background">
+      <div className="bg-background flex min-h-screen items-center justify-center">
         <div className="w-full max-w-md space-y-8 p-8">
           <div className="flex flex-col items-center gap-4">
-            <p className="text-sm text-destructive">
+            <p className="text-destructive text-sm">
               Provider &ldquo;{provider}&rdquo; is not yet supported. Currently only
               &ldquo;google&rdquo; is available.
             </p>
@@ -165,18 +165,18 @@ export function AuthLogin({
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
+    <div className="bg-background flex min-h-screen items-center justify-center">
       <div className="w-full max-w-md space-y-8 p-8">
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-foreground">{title}</h1>
-          <p className="mt-2 text-muted-foreground">{description}</p>
+          <h1 className="text-foreground text-4xl font-bold">{title}</h1>
+          <p className="text-muted-foreground mt-2">{description}</p>
         </div>
 
-        <div className="mt-8 rounded-lg border border-border bg-card p-6 shadow-lg">
+        <div className="border-border bg-card mt-8 rounded-lg border p-6 shadow-lg">
           <div className="space-y-6">
             <div className="text-center">
-              <h2 className="text-2xl font-semibold text-foreground">Sign in to continue</h2>
-              <p className="mt-2 text-sm text-muted-foreground">
+              <h2 className="text-foreground text-2xl font-semibold">Sign in to continue</h2>
+              <p className="text-muted-foreground mt-2 text-sm">
                 Use your Google account to get started
               </p>
             </div>
@@ -192,14 +192,14 @@ export function AuthLogin({
                 shape="rectangular"
               />
 
-              {isLoading && <p className="text-sm text-muted-foreground">Signing in...</p>}
+              {isLoading && <p className="text-muted-foreground text-sm">Signing in...</p>}
 
-              {error && <p className="text-sm text-destructive">{error}</p>}
+              {error && <p className="text-destructive text-sm">{error}</p>}
             </div>
           </div>
         </div>
 
-        <p className="text-center text-xs text-muted-foreground">
+        <p className="text-muted-foreground text-center text-xs">
           By signing in, you agree to our Terms of Service and Privacy Policy
         </p>
       </div>

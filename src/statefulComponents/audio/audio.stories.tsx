@@ -15,7 +15,7 @@ function AudioToggleWrapper() {
     <AudioContext.Provider value={value}>
       <div className="flex flex-col items-start gap-4">
         <AudioToggle />
-        <p className="text-sm text-muted-foreground">
+        <p className="text-muted-foreground text-sm">
           Audio: <strong>{isMuted ? 'Muted' : 'Unmuted'}</strong>
         </p>
       </div>

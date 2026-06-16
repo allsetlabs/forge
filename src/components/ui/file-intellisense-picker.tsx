@@ -122,18 +122,18 @@ export const FileIntellisensePicker = React.forwardRef<
   return (
     <div
       className={cn(
-        'absolute bottom-full left-0 z-50 mb-1 w-full overflow-hidden rounded-md border border-border bg-popover shadow-md',
+        'border-border bg-popover absolute bottom-full left-0 z-50 mb-1 w-full overflow-hidden rounded-md border shadow-md',
         className
       )}
     >
       <div ref={scrollRef} className="max-h-[240px] overflow-y-auto p-1">
         {loading ? (
           <div className="flex items-center justify-center px-2 py-4">
-            <span className="text-xs text-muted-foreground">Loading files...</span>
+            <span className="text-muted-foreground text-xs">Loading files...</span>
           </div>
         ) : items.length === 0 ? (
           <div className="flex items-center justify-center px-2 py-4">
-            <span className="text-xs text-muted-foreground">No files found</span>
+            <span className="text-muted-foreground text-xs">No files found</span>
           </div>
         ) : (
           <div style={{ height: virtualizer.getTotalSize(), position: 'relative' }}>
@@ -173,7 +173,7 @@ export const FileIntellisensePicker = React.forwardRef<
         )}
         {loadingMore && (
           <div className="flex items-center justify-center px-2 py-2">
-            <span className="text-xs text-muted-foreground">Loading more...</span>
+            <span className="text-muted-foreground text-xs">Loading more...</span>
           </div>
         )}
       </div>

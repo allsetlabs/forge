@@ -23,7 +23,7 @@ export const WithData: StoryObj = {
     <DataFetchWrapper isLoading={false} error={null}>
       <div className="rounded-lg border p-4">
         <h3 className="text-lg font-semibold">Successfully loaded data</h3>
-        <p className="text-sm text-muted-foreground">This is your data content.</p>
+        <p className="text-muted-foreground text-sm">This is your data content.</p>
       </div>
     </DataFetchWrapper>
   ),
@@ -37,7 +37,7 @@ export const Empty: StoryObj = {
       isEmpty={true}
       emptyMessage="No items found"
       emptyTitle="No Items"
-      emptyIcon={<Package className="h-12 w-12 text-muted-foreground" />}
+      emptyIcon={<Package className="text-muted-foreground h-12 w-12" />}
     >
       <div>Data content</div>
     </DataFetchWrapper>

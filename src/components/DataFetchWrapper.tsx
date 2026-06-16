@@ -53,7 +53,7 @@ export function DataFetchWrapper({
     return (
       <div className={wrapperClasses}>
         <div className="flex h-full flex-col items-center justify-center py-12">
-          <Loader2 className="mb-4 h-12 w-12 animate-spin text-primary" />
+          <Loader2 className="text-primary mb-4 h-12 w-12 animate-spin" />
           <p className="text-muted-foreground">{loadingMessage}</p>
         </div>
       </div>
@@ -71,12 +71,12 @@ export function DataFetchWrapper({
 
     return (
       <div className={wrapperClasses}>
-        <div className="rounded-lg border border-destructive bg-destructive/10 p-6">
+        <div className="border-destructive bg-destructive/10 rounded-lg border p-6">
           <div className="flex items-start gap-3">
-            <AlertTriangle className="h-6 w-6 flex-shrink-0 text-destructive" aria-hidden="true" />
+            <AlertTriangle className="text-destructive h-6 w-6 flex-shrink-0" aria-hidden="true" />
             <div className="flex-1">
-              <h3 className="text-sm font-semibold text-destructive-foreground">Error</h3>
-              <p className="mt-1 text-sm text-destructive-foreground">{errorMessage}</p>
+              <h3 className="text-destructive-foreground text-sm font-semibold">Error</h3>
+              <p className="text-destructive-foreground mt-1 text-sm">{errorMessage}</p>
             </div>
           </div>
         </div>
@@ -90,8 +90,8 @@ export function DataFetchWrapper({
       <div className={wrapperClasses}>
         <div className="flex flex-col items-center justify-center p-8 text-center">
           {emptyIcon && <div className="mb-4">{emptyIcon}</div>}
-          <h3 className="mb-2 text-lg font-semibold text-foreground">{emptyTitle}</h3>
-          <p className="text-sm text-muted-foreground">{emptyMessage}</p>
+          <h3 className="text-foreground mb-2 text-lg font-semibold">{emptyTitle}</h3>
+          <p className="text-muted-foreground text-sm">{emptyMessage}</p>
         </div>
       </div>
     );

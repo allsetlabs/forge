@@ -232,11 +232,11 @@ export function CursorProvider({ children, targetElement }: CursorProviderProps)
         <>
           {/* Main cursor ring */}
           <div
-            className={`pointer-events-none fixed left-0 top-0 z-[9999] h-6 w-6 rounded-full border-2 border-primary ${
+            className={`border-primary pointer-events-none fixed left-0 top-0 z-[9999] h-6 w-6 rounded-full border-2 ${
               isDragging
-                ? 'scale-125 bg-primary/40 shadow-xl shadow-primary/50'
+                ? 'bg-primary/40 shadow-primary/50 scale-125 shadow-xl'
                 : isHovering
-                  ? 'scale-150 bg-accent/30 shadow-lg shadow-accent/50'
+                  ? 'bg-accent/30 shadow-accent/50 scale-150 shadow-lg'
                   : 'bg-primary/20'
             }`}
             style={{
@@ -255,7 +255,7 @@ export function CursorProvider({ children, targetElement }: CursorProviderProps)
           />
           {/* Inner dot */}
           <div
-            className={`pointer-events-none fixed left-0 top-0 z-[9999] h-2 w-2 rounded-full bg-primary ${
+            className={`bg-primary pointer-events-none fixed left-0 top-0 z-[9999] h-2 w-2 rounded-full ${
               isDragging ? 'scale-150' : ''
             }`}
             style={{

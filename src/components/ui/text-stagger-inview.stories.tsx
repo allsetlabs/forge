@@ -52,7 +52,7 @@ export const AllAnimations: Story = {
     <div className="flex flex-col gap-8">
       {(['default', 'blur', 'left', 'right', 'top', 'bottom', 'z'] as const).map((anim) => (
         <div key={anim} className="overflow-hidden">
-          <p className="mb-1 text-xs text-muted-foreground">{anim}</p>
+          <p className="text-muted-foreground mb-1 text-xs">{anim}</p>
           <TextStaggerInview
             animation={anim}
             className="text-2xl font-bold tracking-tight"

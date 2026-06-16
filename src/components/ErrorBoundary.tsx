@@ -74,12 +74,12 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
     if (this.state.hasError) {
       return (
         <div className="flex min-h-screen items-center justify-center px-4">
-          <div className="w-full max-w-2xl rounded-xl border bg-card p-8 backdrop-blur-sm">
+          <div className="bg-card w-full max-w-2xl rounded-xl border p-8 backdrop-blur-sm">
             {/* Error Icon */}
             <div className="mb-6 flex justify-center">
-              <div className="rounded-full bg-destructive/20 p-4">
+              <div className="bg-destructive/20 rounded-full p-4">
                 <svg
-                  className="h-12 w-12 text-destructive"
+                  className="text-destructive h-12 w-12"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -96,29 +96,29 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
             </div>
 
             {/* Error Message */}
-            <h1 className="mb-4 text-center text-3xl font-bold text-foreground">
+            <h1 className="text-foreground mb-4 text-center text-3xl font-bold">
               Something went wrong
             </h1>
 
-            <p className="mb-6 text-center text-lg text-muted-foreground">
+            <p className="text-muted-foreground mb-6 text-center text-lg">
               We&rsquo;re sorry for the inconvenience. An unexpected error has occurred.
             </p>
 
             {/* Error Details (only in development) */}
             {this.props.isDev && this.state.error && (
-              <div className="mb-6 rounded-lg border bg-secondary/50 p-4">
-                <p className="mb-2 font-mono text-sm font-semibold text-destructive">
+              <div className="bg-secondary/50 mb-6 rounded-lg border p-4">
+                <p className="text-destructive mb-2 font-mono text-sm font-semibold">
                   Error Details:
                 </p>
-                <p className="mb-3 font-mono text-sm text-card-foreground">
+                <p className="text-card-foreground mb-3 font-mono text-sm">
                   {this.state.error.toString()}
                 </p>
                 {this.state.errorInfo && (
                   <details className="cursor-pointer">
-                    <summary className="mb-2 font-mono text-xs text-muted-foreground hover:text-foreground">
+                    <summary className="text-muted-foreground hover:text-foreground mb-2 font-mono text-xs">
                       Component Stack Trace
                     </summary>
-                    <pre className="overflow-x-auto font-mono text-xs text-muted-foreground">
+                    <pre className="text-muted-foreground overflow-x-auto font-mono text-xs">
                       {this.state.errorInfo}
                     </pre>
                   </details>
@@ -130,20 +130,20 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
             <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
               <button
                 onClick={this.handleReset}
-                className="rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground shadow-lg transition-all duration-300 hover:bg-primary/90"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg px-6 py-3 font-semibold shadow-lg transition-all duration-300"
               >
                 Try Again
               </button>
               <button
                 onClick={() => (window.location.href = this.getHomeUrl())}
-                className="rounded-lg border bg-card px-6 py-3 font-semibold text-card-foreground backdrop-blur-sm transition-all duration-300 hover:bg-card/50"
+                className="bg-card text-card-foreground hover:bg-card/50 rounded-lg border px-6 py-3 font-semibold backdrop-blur-sm transition-all duration-300"
               >
                 Go to Home
               </button>
             </div>
 
             {/* Support Information */}
-            <p className="mt-8 text-center font-mono text-xs text-muted-foreground">
+            <p className="text-muted-foreground mt-8 text-center font-mono text-xs">
               If the problem persists, please contact support or refresh the page.
             </p>
           </div>

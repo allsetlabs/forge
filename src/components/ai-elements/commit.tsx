@@ -12,7 +12,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 export type CommitProps = ComponentProps<typeof Collapsible>;
 
 export const Commit = ({ className, children, ...props }: CommitProps) => (
-  <Collapsible className={cn('rounded-lg border bg-background', className)} {...props}>
+  <Collapsible className={cn('bg-background rounded-lg border', className)} {...props}>
     {children}
   </Collapsible>
 );
@@ -53,7 +53,7 @@ export type CommitMetadataProps = HTMLAttributes<HTMLDivElement>;
 
 export const CommitMetadata = ({ className, children, ...props }: CommitMetadataProps) => (
   <div
-    className={cn('flex items-center gap-2 text-xs text-muted-foreground', className)}
+    className={cn('text-muted-foreground flex items-center gap-2 text-xs', className)}
     {...props}
   >
     {children}
@@ -216,7 +216,7 @@ export type CommitFileProps = HTMLAttributes<HTMLDivElement>;
 export const CommitFile = ({ className, children, ...props }: CommitFileProps) => (
   <div
     className={cn(
-      'flex items-center justify-between gap-2 rounded px-2 py-1 text-sm hover:bg-muted/50',
+      'hover:bg-muted/50 flex items-center justify-between gap-2 rounded px-2 py-1 text-sm',
       className
     )}
     {...props}
@@ -268,7 +268,7 @@ export const CommitFileStatus = ({
 export type CommitFileIconProps = ComponentProps<typeof FileIcon>;
 
 export const CommitFileIcon = ({ className, ...props }: CommitFileIconProps) => (
-  <FileIcon className={cn('size-3.5 shrink-0 text-muted-foreground', className)} {...props} />
+  <FileIcon className={cn('text-muted-foreground size-3.5 shrink-0', className)} {...props} />
 );
 
 export type CommitFilePathProps = HTMLAttributes<HTMLSpanElement>;

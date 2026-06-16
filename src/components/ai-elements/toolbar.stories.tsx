@@ -39,7 +39,7 @@ export const WithGroups: Story = {
           <ItalicIcon className="size-4" />
         </Button>
       </div>
-      <div className="h-4 w-px bg-border" />
+      <div className="bg-border h-4 w-px" />
       <div className="flex gap-1">
         <Button variant="ghost" size="icon-sm">
           <UnderlineIcon className="size-4" />

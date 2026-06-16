@@ -22,8 +22,8 @@ type Story = StoryObj;
 // They cannot be demonstrated standalone without the ReactFlow context
 export const Documentation: Story = {
   render: () => (
-    <div className="flex h-48 flex-col items-center justify-center gap-4 rounded-md border bg-muted p-4">
-      <p className="text-center text-sm text-muted-foreground">
+    <div className="bg-muted flex h-48 flex-col items-center justify-center gap-4 rounded-md border p-4">
+      <p className="text-muted-foreground text-center text-sm">
         Edge components are used in ReactFlow to connect nodes.
         <br />
         Available types: Edge.Animated, Edge.Temporary

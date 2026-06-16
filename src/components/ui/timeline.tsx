@@ -454,7 +454,7 @@ export function TimelineItem({
       >
         <div
           className={cn(
-            'absolute bg-muted',
+            'bg-muted absolute',
             index === 0 ? (isVertical ? 'rounded-t-full' : 'rounded-l-full') : '',
             index === total - 1 ? (isVertical ? 'rounded-b-full' : 'rounded-r-full') : '',
             isVertical ? 'h-full w-1' : 'h-1 w-full'
@@ -484,7 +484,7 @@ export function TimelineItem({
 
 export function TimelineItemDate({ children, className, ...props }: TimelineItemDateProps) {
   return (
-    <span className={cn('mb-1 text-xs text-muted-foreground', className)} {...props}>
+    <span className={cn('text-muted-foreground mb-1 text-xs', className)} {...props}>
       {children instanceof Date ? (
         <time dateTime={children.toISOString()}>{dateFormatter.format(children)}</time>
       ) : (
@@ -508,7 +508,7 @@ export function TimelineItemDescription({
   ...props
 }: TimelineItemDescriptionProps) {
   return (
-    <p className={cn('mt-2 text-sm text-muted-foreground', className)} {...props}>
+    <p className={cn('text-muted-foreground mt-2 text-sm', className)} {...props}>
       {children}
     </p>
   );

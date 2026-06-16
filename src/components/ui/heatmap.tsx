@@ -160,7 +160,7 @@ function daysOfTheWeekIndicator({ daysOfTheWeekOption, fontSize }: DaysOfTheWeek
     ) : (
       <div
         key={i}
-        className="flex items-center text-muted-foreground"
+        className="text-muted-foreground flex items-center"
         style={{
           gridRow: i + 2,
           gridColumn: 1,
@@ -343,7 +343,7 @@ export function Heatmap(props: HeatmapProps) {
         <div
           key={`header-${i}`}
           style={{ gridColumn: i + 2, gridRow: 1, fontSize }}
-          className="flex items-end text-muted-foreground"
+          className="text-muted-foreground flex items-end"
         >
           {monthLabels[i]}
         </div>

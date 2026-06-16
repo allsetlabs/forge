@@ -191,7 +191,7 @@ function AuthGuard({ children, onSuccess, loginTitle, loginDescription }: AuthGu
   return (
     <DataFetchWrapper
       isLoading={isLoading}
-      className="min-h-screen bg-background"
+      className="bg-background min-h-screen"
       loadingMessage="Loading..."
     >
       {isAuthenticated ? (

@@ -48,22 +48,26 @@ Run `npm run type-check` after code changes. For visual component changes, start
 **Install:** add `"@allsetlabs/forge": "file:../forge"` to `package.json`
 
 **TypeScript paths** — add to `tsconfig.json`:
+
 ```json
 { "paths": { "@allsetlabs/forge/*": ["./node_modules/@allsetlabs/forge/src/*"] } }
 ```
 
 **Tailwind config** — extend the library's base config:
+
 ```js
 import baseConfig from '@allsetlabs/forge/tailwind.config';
 export default { ...baseConfig };
 ```
 
 **Root wrapper** — wrap app with `InitializeForgeChunks` (imports styles, initializes providers):
+
 ```tsx
 import { InitializeForgeChunks } from '@allsetlabs/forge/InitializeForgeChunks';
 ```
 
 **Import components:**
+
 ```tsx
 import { Button } from '@allsetlabs/forge/components/ui/button';
 ```
@@ -76,6 +80,7 @@ import { Button } from '@allsetlabs/forge/components/ui/button';
 4. Follow shadcn/ui patterns: CVA for variants, Radix UI for headless behavior, `cn()` for class merging
 
 **Install from registries:**
+
 ```bash
 npx shadcn@latest add button                             # shadcn default
 npx shadcn@latest add @ai-elements/message               # ai-elements

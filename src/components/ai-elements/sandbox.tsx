@@ -32,11 +32,11 @@ export const SandboxHeader = ({ className, title, state, ...props }: SandboxHead
     {...props}
   >
     <div className="flex items-center gap-2">
-      <Code className="size-4 text-muted-foreground" />
+      <Code className="text-muted-foreground size-4" />
       <span className="text-sm font-medium">{title}</span>
       {getStatusBadge(state)}
     </div>
-    <ChevronDownIcon className="size-4 text-muted-foreground transition-transform group-data-[state=open]:rotate-180" />
+    <ChevronDownIcon className="text-muted-foreground size-4 transition-transform group-data-[state=open]:rotate-180" />
   </CollapsibleTrigger>
 );
 
@@ -45,7 +45,7 @@ export type SandboxContentProps = ComponentProps<typeof CollapsibleContent>;
 export const SandboxContent = ({ className, ...props }: SandboxContentProps) => (
   <CollapsibleContent
     className={cn(
-      'outline-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:slide-out-to-top-2 data-[state=open]:slide-in-from-top-2',
+      'data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:slide-out-to-top-2 data-[state=open]:slide-in-from-top-2 outline-none',
       className
     )}
     {...props}
@@ -62,7 +62,7 @@ export type SandboxTabsBarProps = ComponentProps<'div'>;
 
 export const SandboxTabsBar = ({ className, ...props }: SandboxTabsBarProps) => (
   <div
-    className={cn('flex w-full items-center border-b border-t border-border', className)}
+    className={cn('border-border flex w-full items-center border-b border-t', className)}
     {...props}
   />
 );
@@ -81,7 +81,7 @@ export type SandboxTabsTriggerProps = ComponentProps<typeof TabsTrigger>;
 export const SandboxTabsTrigger = ({ className, ...props }: SandboxTabsTriggerProps) => (
   <TabsTrigger
     className={cn(
-      'rounded-none border-0 border-b-2 border-transparent px-4 py-2 text-sm font-medium text-muted-foreground transition-colors data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:text-foreground data-[state=active]:shadow-none',
+      'text-muted-foreground data-[state=active]:border-primary data-[state=active]:text-foreground rounded-none border-0 border-b-2 border-transparent px-4 py-2 text-sm font-medium transition-colors data-[state=active]:bg-transparent data-[state=active]:shadow-none',
       className
     )}
     {...props}

@@ -15,7 +15,7 @@ export const Default: Story = {
     <div className="relative h-screen w-full">
       <BackgroundGradient orbCount={3} />
       <div className="relative z-10 flex h-full items-center justify-center">
-        <div className="rounded-lg border bg-card/80 p-8 backdrop-blur-sm">
+        <div className="bg-card/80 rounded-lg border p-8 backdrop-blur-sm">
           <h1 className="text-3xl font-bold">Background Gradient</h1>
           <p className="text-muted-foreground">Animated floating gradient orbs in the background</p>
         </div>

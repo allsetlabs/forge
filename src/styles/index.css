@@ -134,7 +134,7 @@
   }
 
   .card {
-    @apply rounded-lg bg-card p-6 shadow-soft transition-all duration-300 hover:shadow-medium;
+    @apply bg-card shadow-soft hover:shadow-medium rounded-lg p-6 transition-all duration-300;
   }
 }
 
@@ -147,7 +147,7 @@
 
   /* Preserve focus ring for keyboard navigation only */
   #forge-app-root *:focus-visible {
-    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+    @apply ring-ring ring-offset-background outline-none ring-2 ring-offset-2;
   }
 
   /* Scrollbar for professional look - scoped to #forge-app-root */
@@ -161,7 +161,7 @@
   }
 
   #forge-app-root ::-webkit-scrollbar-thumb {
-    @apply rounded-full bg-muted-foreground/30;
+    @apply bg-muted-foreground/30 rounded-full;
   }
 
   #forge-app-root ::-webkit-scrollbar-thumb:hover {

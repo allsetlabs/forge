@@ -37,7 +37,7 @@ function AuthDemo() {
   return (
     <AuthContext.Provider value={value}>
       <div className="flex flex-col items-start gap-4 p-4">
-        <p className="text-sm text-muted-foreground">
+        <p className="text-muted-foreground text-sm">
           Authenticated: <strong>{value.isAuthenticated ? 'Yes' : 'No'}</strong>
         </p>
         {value.user && (
@@ -48,14 +48,14 @@ function AuthDemo() {
         )}
         {value.isAuthenticated ? (
           <button
-            className="rounded bg-destructive px-3 py-1.5 text-sm text-destructive-foreground"
+            className="bg-destructive text-destructive-foreground rounded px-3 py-1.5 text-sm"
             onClick={value.logout}
           >
             Logout
           </button>
         ) : (
           <button
-            className="rounded bg-primary px-3 py-1.5 text-sm text-primary-foreground"
+            className="bg-primary text-primary-foreground rounded px-3 py-1.5 text-sm"
             onClick={() => value.login(MOCK_TOKEN_RESPONSE)}
           >
             Login

@@ -37,8 +37,8 @@ export const WithCustomClass: Story = {
 // Note: In a real scenario, the base64 would be a full image from AI generation
 export const Placeholder: Story = {
   render: () => (
-    <div className="flex h-48 w-full items-center justify-center rounded-md border bg-muted">
-      <p className="text-sm text-muted-foreground">AI-generated image would appear here</p>
+    <div className="bg-muted flex h-48 w-full items-center justify-center rounded-md border">
+      <p className="text-muted-foreground text-sm">AI-generated image would appear here</p>
     </div>
   ),
 };

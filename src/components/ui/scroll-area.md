@@ -63,7 +63,7 @@ import { ScrollArea, ScrollBar } from '@allsetlabs/forge/components/ui/scroll-ar
 ### Horizontal Scroll
 
 ```tsx
-<ScrollArea className="w-96 rounded-md border whitespace-nowrap">
+<ScrollArea className="w-96 whitespace-nowrap rounded-md border">
   <div className="flex w-max space-x-4 p-4">
     {Array.from({ length: 20 }).map((_, i) => (
       <div key={i} className="bg-primary h-20 w-20 rounded-md" />
@@ -86,7 +86,7 @@ import { ScrollArea, ScrollBar } from '@allsetlabs/forge/components/ui/scroll-ar
 ### Image Gallery Scroll
 
 ```tsx
-<ScrollArea className="w-full rounded-lg border whitespace-nowrap">
+<ScrollArea className="w-full whitespace-nowrap rounded-lg border">
   <div className="flex w-max gap-4 p-4">
     {images.map((image) => (
       <img
@@ -136,7 +136,7 @@ import { ScrollArea, ScrollBar } from '@allsetlabs/forge/components/ui/scroll-ar
 ### Data Table with Horizontal Scroll
 
 ```tsx
-<ScrollArea className="w-full rounded-md border whitespace-nowrap">
+<ScrollArea className="w-full whitespace-nowrap rounded-md border">
   <table className="w-full">
     <thead>
       <tr>

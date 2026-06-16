@@ -238,7 +238,7 @@ const [open, setOpen] = useState(false);
   <DrawerContent>
     <div className="relative p-4">
       <DrawerClose asChild>
-        <Button variant="ghost" size="icon" className="absolute top-4 right-4">
+        <Button variant="ghost" size="icon" className="absolute right-4 top-4">
           <X className="h-4 w-4" />
         </Button>
       </DrawerClose>

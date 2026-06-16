@@ -13,7 +13,7 @@ export type ArtifactProps = HTMLAttributes<HTMLDivElement>;
 export const Artifact = ({ className, ...props }: ArtifactProps) => (
   <div
     className={cn(
-      'flex flex-col overflow-hidden rounded-lg border bg-background shadow-sm',
+      'bg-background flex flex-col overflow-hidden rounded-lg border shadow-sm',
       className
     )}
     {...props}
@@ -24,7 +24,7 @@ export type ArtifactHeaderProps = HTMLAttributes<HTMLDivElement>;
 
 export const ArtifactHeader = ({ className, ...props }: ArtifactHeaderProps) => (
   <div
-    className={cn('flex items-center justify-between border-b bg-muted/50 px-4 py-3', className)}
+    className={cn('bg-muted/50 flex items-center justify-between border-b px-4 py-3', className)}
     {...props}
   />
 );
@@ -39,7 +39,7 @@ export const ArtifactClose = ({
   ...props
 }: ArtifactCloseProps) => (
   <Button
-    className={cn('size-8 p-0 text-muted-foreground hover:text-foreground', className)}
+    className={cn('text-muted-foreground hover:text-foreground size-8 p-0', className)}
     size={size}
     type="button"
     variant={variant}
@@ -53,13 +53,13 @@ export const ArtifactClose = ({
 export type ArtifactTitleProps = HTMLAttributes<HTMLParagraphElement>;
 
 export const ArtifactTitle = ({ className, ...props }: ArtifactTitleProps) => (
-  <p className={cn('text-sm font-medium text-foreground', className)} {...props} />
+  <p className={cn('text-foreground text-sm font-medium', className)} {...props} />
 );
 
 export type ArtifactDescriptionProps = HTMLAttributes<HTMLParagraphElement>;
 
 export const ArtifactDescription = ({ className, ...props }: ArtifactDescriptionProps) => (
-  <p className={cn('text-sm text-muted-foreground', className)} {...props} />
+  <p className={cn('text-muted-foreground text-sm', className)} {...props} />
 );
 
 export type ArtifactActionsProps = HTMLAttributes<HTMLDivElement>;
@@ -86,7 +86,7 @@ export const ArtifactAction = ({
 }: ArtifactActionProps) => {
   const button = (
     <Button
-      className={cn('size-8 p-0 text-muted-foreground hover:text-foreground', className)}
+      className={cn('text-muted-foreground hover:text-foreground size-8 p-0', className)}
       size={size}
       type="button"
       variant={variant}

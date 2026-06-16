@@ -21,8 +21,8 @@ type Story = StoryObj;
 // It cannot be demonstrated standalone without the ReactFlow context
 export const Documentation: Story = {
   render: () => (
-    <div className="flex h-48 items-center justify-center rounded-md border bg-muted p-4">
-      <p className="text-center text-sm text-muted-foreground">
+    <div className="bg-muted flex h-48 items-center justify-center rounded-md border p-4">
+      <p className="text-muted-foreground text-center text-sm">
         Connection component is used as a connectionLineComponent in ReactFlow.
         <br />
         See Canvas stories for usage examples.

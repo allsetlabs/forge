@@ -16,7 +16,7 @@ export const Default: Story = {
       <SandboxHeader title="Preview" state="output-available" />
       <SandboxContent>
         <div className="flex h-48 items-center justify-center">
-          <p className="text-sm text-muted-foreground">Sandbox content preview</p>
+          <p className="text-muted-foreground text-sm">Sandbox content preview</p>
         </div>
       </SandboxContent>
     </Sandbox>
@@ -29,7 +29,7 @@ export const Loading: Story = {
       <SandboxHeader title="Running code..." state="input-streaming" />
       <SandboxContent>
         <div className="flex h-48 items-center justify-center">
-          <p className="text-sm text-muted-foreground">Loading...</p>
+          <p className="text-muted-foreground text-sm">Loading...</p>
         </div>
       </SandboxContent>
     </Sandbox>

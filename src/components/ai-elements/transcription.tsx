@@ -101,7 +101,7 @@ export const TranscriptionSegment = ({
         isActive && 'text-primary',
         isPast && 'text-muted-foreground',
         !(isActive || isPast) && 'text-muted-foreground/60',
-        onSeek && 'cursor-pointer hover:text-foreground',
+        onSeek && 'hover:text-foreground cursor-pointer',
         !onSeek && 'cursor-default',
         className
       )}

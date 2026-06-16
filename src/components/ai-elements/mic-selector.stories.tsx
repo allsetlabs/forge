@@ -20,8 +20,8 @@ type Story = StoryObj<typeof meta>;
 
 export const Documentation: Story = {
   render: () => (
-    <div className="flex h-48 items-center justify-center rounded-md border bg-muted p-4">
-      <p className="text-center text-sm text-muted-foreground">
+    <div className="bg-muted flex h-48 items-center justify-center rounded-md border p-4">
+      <p className="text-muted-foreground text-center text-sm">
         MicSelector allows users to choose audio input devices.
         <br />
         Requires browser microphone permissions to list devices.

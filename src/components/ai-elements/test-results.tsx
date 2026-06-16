@@ -46,7 +46,7 @@ export const TestResults = ({ summary, className, children, ...props }: TestResu
 
   return (
     <TestResultsContext.Provider value={contextValue}>
-      <div className={cn('rounded-lg border bg-background', className)} {...props}>
+      <div className={cn('bg-background rounded-lg border', className)} {...props}>
         {children ??
           (summary && (
             <TestResultsHeader>
@@ -125,7 +125,7 @@ export const TestResultsDuration = ({
   }
 
   return (
-    <span className={cn('text-sm text-muted-foreground', className)} {...props}>
+    <span className={cn('text-muted-foreground text-sm', className)} {...props}>
       {children ?? formatDuration(summary.duration)}
     </span>
   );
@@ -151,11 +151,11 @@ export const TestResultsProgress = ({
     <div className={cn('space-y-2', className)} {...props}>
       {children ?? (
         <>
-          <div className="flex h-2 overflow-hidden rounded-full bg-muted">
+          <div className="bg-muted flex h-2 overflow-hidden rounded-full">
             <div className="bg-green-500 transition-all" style={{ width: `${passedPercent}%` }} />
             <div className="bg-red-500 transition-all" style={{ width: `${failedPercent}%` }} />
           </div>
-          <div className="flex justify-between text-xs text-muted-foreground">
+          <div className="text-muted-foreground flex justify-between text-xs">
             <span>
               {summary.passed}/{summary.total} tests passed
             </span>
@@ -210,12 +210,12 @@ export const TestSuiteName = ({ className, children, ...props }: TestSuiteNamePr
   return (
     <CollapsibleTrigger
       className={cn(
-        'group flex w-full items-center gap-2 px-4 py-3 text-left transition-colors hover:bg-muted/50',
+        'hover:bg-muted/50 group flex w-full items-center gap-2 px-4 py-3 text-left transition-colors',
         className
       )}
       {...props}
     >
-      <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground transition-transform group-data-[state=open]:rotate-90" />
+      <ChevronRightIcon className="text-muted-foreground size-4 shrink-0 transition-transform group-data-[state=open]:rotate-90" />
       <TestStatusIcon status={status} />
       <span className="text-sm font-medium">{children ?? name}</span>
     </CollapsibleTrigger>
@@ -344,7 +344,7 @@ export const TestDuration = ({ className, children, ...props }: TestDurationProp
   }
 
   return (
-    <span className={cn('ml-auto text-xs text-muted-foreground', className)} {...props}>
+    <span className={cn('text-muted-foreground ml-auto text-xs', className)} {...props}>
       {children ?? `${duration}ms`}
     </span>
   );

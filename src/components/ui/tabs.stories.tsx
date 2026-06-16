@@ -21,7 +21,7 @@ export const Default: Story = {
       <TabsContent value="account">
         <div className="space-y-2">
           <h3 className="text-lg font-semibold">Account</h3>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-muted-foreground text-sm">
             Make changes to your account here. Click save when you&apos;re done.
           </p>
         </div>
@@ -29,7 +29,7 @@ export const Default: Story = {
       <TabsContent value="password">
         <div className="space-y-2">
           <h3 className="text-lg font-semibold">Password</h3>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-muted-foreground text-sm">
             Change your password here. After saving, you&apos;ll be logged out.
           </p>
         </div>
@@ -37,7 +37,7 @@ export const Default: Story = {
       <TabsContent value="settings">
         <div className="space-y-2">
           <h3 className="text-lg font-semibold">Settings</h3>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-muted-foreground text-sm">
             Manage your account settings and preferences.
           </p>
         </div>

@@ -96,23 +96,23 @@ export const AllVariants: Story = {
   render: () => (
     <div className="flex flex-col gap-8">
       <div>
-        <p className="mb-2 text-sm text-muted-foreground">Default</p>
+        <p className="text-muted-foreground mb-2 text-sm">Default</p>
         <FlipClock countdown={false} variant="default" size="sm" />
       </div>
       <div>
-        <p className="mb-2 text-sm text-muted-foreground">Secondary</p>
+        <p className="text-muted-foreground mb-2 text-sm">Secondary</p>
         <FlipClock countdown={false} variant="secondary" size="sm" />
       </div>
       <div>
-        <p className="mb-2 text-sm text-muted-foreground">Destructive</p>
+        <p className="text-muted-foreground mb-2 text-sm">Destructive</p>
         <FlipClock countdown={false} variant="destructive" size="sm" />
       </div>
       <div>
-        <p className="mb-2 text-sm text-muted-foreground">Outline</p>
+        <p className="text-muted-foreground mb-2 text-sm">Outline</p>
         <FlipClock countdown={false} variant="outline" size="sm" />
       </div>
       <div>
-        <p className="mb-2 text-sm text-muted-foreground">Muted</p>
+        <p className="text-muted-foreground mb-2 text-sm">Muted</p>
         <FlipClock countdown={false} variant="muted" size="sm" />
       </div>
     </div>

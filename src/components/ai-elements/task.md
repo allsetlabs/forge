@@ -163,7 +163,7 @@ import {
     <TaskItem>Compiling TypeScript</TaskItem>
     <TaskItem>
       Bundling with Vite
-      <div className="mt-2 ml-4 space-y-2">
+      <div className="ml-4 mt-2 space-y-2">
         <TaskItem>Optimizing imports</TaskItem>
         <TaskItem>Tree shaking</TaskItem>
         <TaskItem>Generating sourcemaps</TaskItem>

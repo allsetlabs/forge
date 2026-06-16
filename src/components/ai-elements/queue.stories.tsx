@@ -41,7 +41,7 @@ export const Empty: Story = {
   render: () => (
     <Queue>
       <QueueList>
-        <p className="p-4 text-center text-sm text-muted-foreground">No items in queue</p>
+        <p className="text-muted-foreground p-4 text-center text-sm">No items in queue</p>
       </QueueList>
     </Queue>
   ),

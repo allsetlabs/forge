@@ -117,7 +117,7 @@ export const WithSeekCallback: Story = {
           onSeek={(time) => setSeekTime(time)}
         />
         {seekTime !== null && (
-          <div className="rounded-md bg-muted p-4 text-center text-sm">
+          <div className="bg-muted rounded-md p-4 text-center text-sm">
             Seeking to: {seekTime.toFixed(2)}s
           </div>
         )}

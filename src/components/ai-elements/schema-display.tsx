@@ -75,7 +75,7 @@ export const SchemaDisplay = ({
 
   return (
     <SchemaDisplayContext.Provider value={contextValue}>
-      <div className={cn('overflow-hidden rounded-lg border bg-background', className)} {...props}>
+      <div className={cn('bg-background overflow-hidden rounded-lg border', className)} {...props}>
         {children ?? (
           <>
             <SchemaDisplayHeader>
@@ -169,7 +169,7 @@ export const SchemaDisplayDescription = ({
   const { description } = useContext(SchemaDisplayContext);
 
   return (
-    <p className={cn('border-b px-4 py-3 text-sm text-muted-foreground', className)} {...props}>
+    <p className={cn('text-muted-foreground border-b px-4 py-3 text-sm', className)} {...props}>
       {children ?? description}
     </p>
   );
@@ -198,8 +198,8 @@ export const SchemaDisplayParameters = ({
 
   return (
     <Collapsible className={cn(className)} defaultOpen {...props}>
-      <CollapsibleTrigger className="group flex w-full items-center gap-2 px-4 py-3 text-left transition-colors hover:bg-muted/50">
-        <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground transition-transform group-data-[state=open]:rotate-90" />
+      <CollapsibleTrigger className="hover:bg-muted/50 group flex w-full items-center gap-2 px-4 py-3 text-left transition-colors">
+        <ChevronRightIcon className="text-muted-foreground size-4 shrink-0 transition-transform group-data-[state=open]:rotate-90" />
         <span className="text-sm font-medium">Parameters</span>
         <Badge className="ml-auto text-xs" variant="secondary">
           {parameters?.length}
@@ -246,7 +246,7 @@ export const SchemaDisplayParameter = ({
         </Badge>
       )}
     </div>
-    {description && <p className="mt-1 text-sm text-muted-foreground">{description}</p>}
+    {description && <p className="text-muted-foreground mt-1 text-sm">{description}</p>}
   </div>
 );
 
@@ -261,8 +261,8 @@ export const SchemaDisplayRequest = ({
 
   return (
     <Collapsible className={cn(className)} defaultOpen {...props}>
-      <CollapsibleTrigger className="group flex w-full items-center gap-2 px-4 py-3 text-left transition-colors hover:bg-muted/50">
-        <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground transition-transform group-data-[state=open]:rotate-90" />
+      <CollapsibleTrigger className="hover:bg-muted/50 group flex w-full items-center gap-2 px-4 py-3 text-left transition-colors">
+        <ChevronRightIcon className="text-muted-foreground size-4 shrink-0 transition-transform group-data-[state=open]:rotate-90" />
         <span className="text-sm font-medium">Request Body</span>
       </CollapsibleTrigger>
       <CollapsibleContent>
@@ -288,8 +288,8 @@ export const SchemaDisplayResponse = ({
 
   return (
     <Collapsible className={cn(className)} defaultOpen {...props}>
-      <CollapsibleTrigger className="group flex w-full items-center gap-2 px-4 py-3 text-left transition-colors hover:bg-muted/50">
-        <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground transition-transform group-data-[state=open]:rotate-90" />
+      <CollapsibleTrigger className="hover:bg-muted/50 group flex w-full items-center gap-2 px-4 py-3 text-left transition-colors">
+        <ChevronRightIcon className="text-muted-foreground size-4 shrink-0 transition-transform group-data-[state=open]:rotate-90" />
         <span className="text-sm font-medium">Response</span>
       </CollapsibleTrigger>
       <CollapsibleContent>
@@ -336,12 +336,12 @@ export const SchemaDisplayProperty = ({
       <Collapsible defaultOpen={depth < 2}>
         <CollapsibleTrigger
           className={cn(
-            'group flex w-full items-center gap-2 py-3 text-left transition-colors hover:bg-muted/50',
+            'hover:bg-muted/50 group flex w-full items-center gap-2 py-3 text-left transition-colors',
             className
           )}
           style={{ paddingLeft }}
         >
-          <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground transition-transform group-data-[state=open]:rotate-90" />
+          <ChevronRightIcon className="text-muted-foreground size-4 shrink-0 transition-transform group-data-[state=open]:rotate-90" />
           <span className="font-mono text-sm">{name}</span>
           <Badge className="text-xs" variant="outline">
             {type}
@@ -357,7 +357,7 @@ export const SchemaDisplayProperty = ({
         </CollapsibleTrigger>
         {description && (
           <p
-            className="pb-2 text-sm text-muted-foreground"
+            className="text-muted-foreground pb-2 text-sm"
             style={{ paddingLeft: paddingLeft + 24 }}
           >
             {description}
@@ -393,7 +393,7 @@ export const SchemaDisplayProperty = ({
           </Badge>
         )}
       </div>
-      {description && <p className="mt-1 pl-6 text-sm text-muted-foreground">{description}</p>}
+      {description && <p className="text-muted-foreground mt-1 pl-6 text-sm">{description}</p>}
     </div>
   );
 };
@@ -406,7 +406,7 @@ export const SchemaDisplayExample = ({
   ...props
 }: SchemaDisplayExampleProps) => (
   <pre
-    className={cn('mx-4 mb-4 overflow-auto rounded-md bg-muted p-4 font-mono text-sm', className)}
+    className={cn('bg-muted mx-4 mb-4 overflow-auto rounded-md p-4 font-mono text-sm', className)}
     {...props}
   >
     {children}

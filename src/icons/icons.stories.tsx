@@ -21,10 +21,10 @@ export const AllIcons: Story = {
         {iconEntries.map(([name, IconComponent]) => (
           <div
             key={name}
-            className="flex flex-col items-center gap-2 rounded-lg border p-4 hover:bg-accent"
+            className="hover:bg-accent flex flex-col items-center gap-2 rounded-lg border p-4"
           >
-            <IconComponent className="h-8 w-8 text-foreground" />
-            <span className="break-all text-center text-xs text-muted-foreground">{name}</span>
+            <IconComponent className="text-foreground h-8 w-8" />
+            <span className="text-muted-foreground break-all text-center text-xs">{name}</span>
           </div>
         ))}
       </div>

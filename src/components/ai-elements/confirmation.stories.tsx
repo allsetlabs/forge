@@ -49,7 +49,7 @@ export const Accepted: Story = {
     >
       <ConfirmationTitle>File deletion request</ConfirmationTitle>
       <ConfirmationAccepted>
-        <p className="text-sm text-muted-foreground">Action approved by user</p>
+        <p className="text-muted-foreground text-sm">Action approved by user</p>
       </ConfirmationAccepted>
     </Confirmation>
   ),
@@ -66,7 +66,7 @@ export const Rejected: Story = {
     >
       <ConfirmationTitle>File deletion request</ConfirmationTitle>
       <ConfirmationRejected>
-        <p className="text-sm text-muted-foreground">Action was cancelled</p>
+        <p className="text-muted-foreground text-sm">Action was cancelled</p>
       </ConfirmationRejected>
     </Confirmation>
   ),

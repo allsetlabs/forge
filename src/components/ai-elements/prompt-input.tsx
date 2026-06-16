@@ -953,7 +953,7 @@ export const PromptInputButton = ({
       <TooltipTrigger asChild>{button}</TooltipTrigger>
       <TooltipContent side={side}>
         {tooltipContent}
-        {shortcut && <span className="ml-2 text-muted-foreground">{shortcut}</span>}
+        {shortcut && <span className="text-muted-foreground ml-2">{shortcut}</span>}
       </TooltipContent>
     </Tooltip>
   );
@@ -1061,7 +1061,7 @@ export const PromptInputSelectTrigger = ({
 }: PromptInputSelectTriggerProps) => (
   <SelectTrigger
     className={cn(
-      'border-none bg-transparent font-medium text-muted-foreground shadow-none transition-colors',
+      'text-muted-foreground border-none bg-transparent font-medium shadow-none transition-colors',
       'hover:bg-accent hover:text-foreground aria-expanded:bg-accent aria-expanded:text-foreground',
       className
     )}
@@ -1129,7 +1129,7 @@ export const PromptInputTabLabel = ({ className, ...props }: PromptInputTabLabel
   // Content provided via children in props
   // oxlint-disable-next-line eslint-plugin-jsx-a11y(heading-has-content)
   // eslint-disable-next-line jsx-a11y/heading-has-content
-  <h3 className={cn('mb-2 px-3 text-xs font-medium text-muted-foreground', className)} {...props} />
+  <h3 className={cn('text-muted-foreground mb-2 px-3 text-xs font-medium', className)} {...props} />
 );
 
 export type PromptInputTabBodyProps = HTMLAttributes<HTMLDivElement>;
@@ -1142,7 +1142,7 @@ export type PromptInputTabItemProps = HTMLAttributes<HTMLDivElement>;
 
 export const PromptInputTabItem = ({ className, ...props }: PromptInputTabItemProps) => (
   <div
-    className={cn('flex items-center gap-2 px-3 py-2 text-xs hover:bg-accent', className)}
+    className={cn('hover:bg-accent flex items-center gap-2 px-3 py-2 text-xs', className)}
     {...props}
   />
 );

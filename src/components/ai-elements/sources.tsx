@@ -9,7 +9,7 @@ import { BookIcon, ChevronDownIcon } from 'lucide-react';
 export type SourcesProps = ComponentProps<'div'>;
 
 export const Sources = ({ className, ...props }: SourcesProps) => (
-  <Collapsible className={cn('not-prose mb-4 text-xs text-primary', className)} {...props} />
+  <Collapsible className={cn('not-prose text-primary mb-4 text-xs', className)} {...props} />
 );
 
 export type SourcesTriggerProps = ComponentProps<typeof CollapsibleTrigger> & {
@@ -33,7 +33,7 @@ export const SourcesContent = ({ className, ...props }: SourcesContentProps) => 
   <CollapsibleContent
     className={cn(
       'mt-3 flex w-fit flex-col gap-2',
-      'outline-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:slide-out-to-top-2 data-[state=open]:slide-in-from-top-2',
+      'data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:slide-out-to-top-2 data-[state=open]:slide-in-from-top-2 outline-none',
       className
     )}
     {...props}

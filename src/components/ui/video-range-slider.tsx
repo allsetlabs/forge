@@ -258,7 +258,7 @@ const VideoRangeSlider = React.forwardRef<HTMLDivElement, VideoRangeSliderProps>
     return (
       <div ref={ref} className={cn('w-full select-none', className)}>
         {/* Time labels */}
-        <div className="mb-2 flex justify-between text-sm text-muted-foreground">
+        <div className="text-muted-foreground mb-2 flex justify-between text-sm">
           <span>0.00</span>
           <span>{formatTimeToMSS(duration)}</span>
         </div>
@@ -267,13 +267,13 @@ const VideoRangeSlider = React.forwardRef<HTMLDivElement, VideoRangeSliderProps>
         <div
           ref={trackRef}
           className={cn(
-            'relative h-10 rounded-md bg-muted',
+            'bg-muted relative h-10 rounded-md',
             disabled && 'cursor-not-allowed opacity-50'
           )}
         >
           {/* Selected range background */}
           <div
-            className="absolute top-0 h-full rounded-md bg-primary/20"
+            className="bg-primary/20 absolute top-0 h-full rounded-md"
             style={{
               left: `${startPos}%`,
               width: `${endPos - startPos}%`,
@@ -298,8 +298,8 @@ const VideoRangeSlider = React.forwardRef<HTMLDivElement, VideoRangeSliderProps>
           >
             <div
               className={cn(
-                'h-full w-1 rounded-l-md bg-primary transition-colors',
-                dragging === 'start' && 'w-1.5 bg-primary/80'
+                'bg-primary h-full w-1 rounded-l-md transition-colors',
+                dragging === 'start' && 'bg-primary/80 w-1.5'
               )}
             />
           </div>
@@ -322,8 +322,8 @@ const VideoRangeSlider = React.forwardRef<HTMLDivElement, VideoRangeSliderProps>
           >
             <div
               className={cn(
-                'h-full w-1 rounded-r-md bg-primary transition-colors',
-                dragging === 'end' && 'w-1.5 bg-primary/80'
+                'bg-primary h-full w-1 rounded-r-md transition-colors',
+                dragging === 'end' && 'bg-primary/80 w-1.5'
               )}
             />
           </div>
@@ -331,7 +331,7 @@ const VideoRangeSlider = React.forwardRef<HTMLDivElement, VideoRangeSliderProps>
           {/* Thumbnail handle (only moves between start and end) */}
           <div
             className={cn(
-              'absolute top-1/2 z-20 flex h-6 w-6 -translate-x-1/2 -translate-y-1/2 cursor-grab items-center justify-center rounded-full border-2 border-secondary bg-background shadow-md transition-transform',
+              'border-secondary bg-background absolute top-1/2 z-20 flex h-6 w-6 -translate-x-1/2 -translate-y-1/2 cursor-grab items-center justify-center rounded-full border-2 shadow-md transition-transform',
               dragging === 'thumbnail' && 'scale-110 cursor-grabbing'
             )}
             style={{ left: `${thumbnailPos}%` }}
@@ -344,23 +344,23 @@ const VideoRangeSlider = React.forwardRef<HTMLDivElement, VideoRangeSliderProps>
             aria-valuenow={thumbnailTime}
             tabIndex={disabled ? -1 : 0}
           >
-            <div className="h-2 w-2 rounded-full bg-secondary" />
+            <div className="bg-secondary h-2 w-2 rounded-full" />
           </div>
         </div>
 
         {/* Current values display */}
         <div className="mt-3 grid grid-cols-3 gap-2 text-center text-sm">
-          <div className="rounded-md bg-muted/50 px-2 py-1">
-            <span className="block text-xs text-muted-foreground">Start</span>
-            <span className="font-mono text-primary">{formatTimeToMSS(startTime)}</span>
+          <div className="bg-muted/50 rounded-md px-2 py-1">
+            <span className="text-muted-foreground block text-xs">Start</span>
+            <span className="text-primary font-mono">{formatTimeToMSS(startTime)}</span>
           </div>
-          <div className="rounded-md bg-muted/50 px-2 py-1">
-            <span className="block text-xs text-muted-foreground">Thumbnail</span>
-            <span className="font-mono text-foreground">{formatTimeToMSS(thumbnailTime)}</span>
+          <div className="bg-muted/50 rounded-md px-2 py-1">
+            <span className="text-muted-foreground block text-xs">Thumbnail</span>
+            <span className="text-foreground font-mono">{formatTimeToMSS(thumbnailTime)}</span>
           </div>
-          <div className="rounded-md bg-muted/50 px-2 py-1">
-            <span className="block text-xs text-muted-foreground">End</span>
-            <span className="font-mono text-primary">{formatTimeToMSS(endTime)}</span>
+          <div className="bg-muted/50 rounded-md px-2 py-1">
+            <span className="text-muted-foreground block text-xs">End</span>
+            <span className="text-primary font-mono">{formatTimeToMSS(endTime)}</span>
           </div>
         </div>
       </div>

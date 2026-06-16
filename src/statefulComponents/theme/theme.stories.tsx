@@ -17,7 +17,7 @@ function ThemeToggleWrapper() {
     <ThemeContext.Provider value={value}>
       <div className="flex flex-col items-start gap-4">
         <ThemeToggle />
-        <p className="text-sm text-muted-foreground">
+        <p className="text-muted-foreground text-sm">
           Current: <strong>{theme}</strong> (resolved: {resolvedTheme})
         </p>
       </div>

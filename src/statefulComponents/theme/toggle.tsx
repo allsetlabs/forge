@@ -12,14 +12,14 @@ export function ThemeToggle() {
   ];
 
   return (
-    <div className="flex gap-0.5 rounded-full bg-muted p-0.5">
+    <div className="bg-muted flex gap-0.5 rounded-full p-0.5">
       {options.map((option) => (
         <button
           key={option.value}
           onClick={() => setTheme(option.value)}
           className={cn(
             'flex h-8 w-8 items-center justify-center rounded-full transition-all',
-            'focus:outline-none focus:ring-2 focus:ring-ring',
+            'focus:ring-ring focus:outline-none focus:ring-2',
             theme === option.value
               ? 'bg-primary text-primary-foreground shadow-sm'
               : 'text-muted-foreground hover:bg-accent hover:text-accent-foreground'

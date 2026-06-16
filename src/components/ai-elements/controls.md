@@ -107,7 +107,7 @@ import { Background } from '@xyflow/react';
 The Controls component applies custom styling:
 
 ```tsx
-<Controls className="bg-card [&>button]:hover:bg-secondary! gap-px overflow-hidden rounded-md border p-1 [&>button]:rounded-md [&>button]:border-none! [&>button]:bg-transparent!" />
+<Controls className="bg-card [&>button]:hover:bg-secondary! [&>button]:border-none! [&>button]:bg-transparent! gap-px overflow-hidden rounded-md border p-1 [&>button]:rounded-md" />
 ```
 
 This creates:

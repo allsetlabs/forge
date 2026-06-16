@@ -26,7 +26,7 @@ export const Default: Story = {
           <NavigationMenuContent>
             <div className="w-[400px] p-4">
               <h4 className="mb-2 text-sm font-medium leading-none">Get Started</h4>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-muted-foreground text-sm">
                 Learn how to set up your application and start building.
               </p>
             </div>
@@ -35,7 +35,7 @@ export const Default: Story = {
         <NavigationMenuItem>
           <NavigationMenuLink
             href="/components"
-            className="inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground"
+            className="bg-background hover:bg-accent hover:text-accent-foreground inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors"
           >
             Components
           </NavigationMenuLink>
@@ -43,7 +43,7 @@ export const Default: Story = {
         <NavigationMenuItem>
           <NavigationMenuLink
             href="/docs"
-            className="inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground"
+            className="bg-background hover:bg-accent hover:text-accent-foreground inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors"
           >
             Documentation
           </NavigationMenuLink>

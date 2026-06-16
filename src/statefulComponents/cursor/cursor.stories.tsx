@@ -16,7 +16,7 @@ function CursorToggleWrapper() {
     <CursorContext.Provider value={value}>
       <div className="flex flex-col items-start gap-4">
         <CursorToggle />
-        <p className="text-sm text-muted-foreground">
+        <p className="text-muted-foreground text-sm">
           Custom cursor: <strong>{isEnabled ? 'Enabled' : 'Disabled'}</strong>
         </p>
       </div>
