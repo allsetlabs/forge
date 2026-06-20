@@ -81,6 +81,11 @@ const DrawerDescription = React.forwardRef<
 ));
 DrawerDescription.displayName = DrawerPrimitive.Description.displayName;
 
+const DrawerBody = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) => (
+  <div className={cn('flex-1 overflow-y-auto', className)} {...props} />
+);
+DrawerBody.displayName = 'DrawerBody';
+
 export {
   Drawer,
   DrawerPortal,
@@ -92,4 +97,5 @@ export {
   DrawerFooter,
   DrawerTitle,
   DrawerDescription,
+  DrawerBody,
 };

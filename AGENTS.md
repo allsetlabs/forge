@@ -72,6 +72,12 @@ import { InitializeForgeChunks } from '@allsetlabs/forge/InitializeForgeChunks';
 import { Button } from '@allsetlabs/forge/components/ui/button';
 ```
 
+## Rule: Fix Issues at Component Level, Not in Consuming Modules
+
+**Never repeat a fix across multiple modules.** If you find yourself making the same styling change, adding the same wrapper component, or fixing the same bug in 2+ places, stop and fix it in Forge first. This keeps the codebase DRY and ensures the fix scales to all projects.
+
+**Example:** When drawer scrolling failed across 19 DevBot drawers, instead of repeating `flex-1 overflow-y-auto` manually, create `DrawerBody` in Forge. All drawers — current and future — benefit automatically.
+
 ## Adding New Components
 
 1. Create `.tsx` in the appropriate directory

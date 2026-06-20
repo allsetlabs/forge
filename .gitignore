@@ -27,3 +27,9 @@ package-lock.json
 # Build output
 build
 .cache
+
+# design-sync (claude.ai/design) — transient build/verification artifacts
+.design-sync
+.ds-sync/
+ds-bundle/
+storybook-static/

@@ -13,6 +13,7 @@ import {
   DrawerClose,
   DrawerContent,
   DrawerHeader,
+  DrawerBody,
   DrawerFooter,
   DrawerTitle,
   DrawerDescription,
@@ -89,6 +90,14 @@ All standard div attributes. The content panel that slides up from bottom.
 | `className` | `string` | -       | Additional CSS classes |
 
 > Styled with padding and grid layout. Centers text on small screens, left-aligns on larger screens.
+
+### DrawerBody
+
+| Prop        | Type     | Default | Description                               |
+| ----------- | -------- | ------- | ----------------------------------------- |
+| `className` | `string` | -       | Additional CSS classes (merged with base) |
+
+> Provides a scrollable content region with `flex-1 overflow-y-auto`. Use this wrapper for any drawer content that might overflow the available height. Automatically expands to fill space and handles scrolling.
 
 ### DrawerFooter
 
@@ -253,23 +262,25 @@ const [open, setOpen] = useState(false);
 
 ### Scrollable Content
 
+When drawer content exceeds the available height, use `DrawerBody` to enable automatic scrolling:
+
 ```tsx
 <Drawer>
   <DrawerTrigger asChild>
     <Button>View Details</Button>
   </DrawerTrigger>
-  <DrawerContent className="max-h-[80vh]">
+  <DrawerContent>
     <DrawerHeader>
       <DrawerTitle>Long Content</DrawerTitle>
       <DrawerDescription>Scroll to see all content</DrawerDescription>
     </DrawerHeader>
-    <div className="overflow-y-auto p-4">
+    <DrawerBody className="p-4">
       {Array.from({ length: 50 }).map((_, i) => (
         <p key={i} className="mb-2">
           Line {i + 1}
         </p>
       ))}
-    </div>
+    </DrawerBody>
     <DrawerFooter>
       <DrawerClose asChild>
         <Button variant="outline">Close</Button>
@@ -278,6 +289,8 @@ const [open, setOpen] = useState(false);
   </DrawerContent>
 </Drawer>
 ```
+
+**Why use DrawerBody?** It automatically applies `flex-1 overflow-y-auto`, ensuring the scrollable region fills available space and properly handles content overflow.
 
 ## Accessibility
 
